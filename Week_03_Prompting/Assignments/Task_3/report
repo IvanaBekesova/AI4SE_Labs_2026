@@ -1,0 +1,10 @@
+Do starej metriky som pridala metriku, ktorá ráta spravnosť iba tých odpovedí, ktoré nie sú prázdne. Pretože by mohla byť j celkom 
+veľká presnoť ak by model vrátil samé prázdne odpovede. Tým pádom vieme lepšie zistiť, či to robí správne.
+
+Výsledok:
+Framework              Accuracy       Non-empty accuracy
+----------------------------------------------------------
+RTF          97.42% (151/155)       96.43% (108/112)
+ICIO         90.32% (140/155)       86.61% ( 97/112)
+Few-Shot     98.71% (153/155)       98.21% (110/112)
+

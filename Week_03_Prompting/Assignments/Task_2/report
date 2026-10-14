@@ -1,0 +1,29 @@
+
+---------------
+RTF
+
+Accuracy: 0.9742 (97.42%)
+Correct: 151/155
+Time : 2min 51sec
+Model: gpt-6-luna
+------------------
+
+
+-------------------
+ICIO
+
+Accuracy: 0.9032 (90.32%)
+Correct: 140/155
+Time: 2min 39sec
+Model: gpt-6-luna
+----------------------
+
+
+---------------------
+FewShot
+
+Accuracy: 0.9871 (98.71%)
+Correct: 153/155
+Time: 1min 37sec
+Model: gpt-6-luna
+---------------------

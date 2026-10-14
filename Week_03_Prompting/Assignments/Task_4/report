@@ -1,0 +1,13 @@
+Framework     Accuracy             Non-empty accuracy    Čas
+RTF           97,42 % (151/155)     96,43 % (108/112)     2 min 51 s
+ICIO          90,32 % (140/155)     86,61 % (97/112)      2 min 39 s
+Few-Shot      98,71 % (153/155)     98,21 % (110/112)     1 min 37 s
+
+---------------------------------------------------------------------
+Najvyššiu presnosť aj najkratší čas mal Few-Shot. Druhý bol RTF a najhoršie dopadol ICIO.
+
+ICIO mal 15 chýb, kde hlavne som si všimla, že urobil chybu, keď bolo napisané v otázke : some .... (napr. some pizza) a on do dopytu dával priamo tie slová aj so some, tým pádom sa to nesprávne filtrovalo. Je to asi tým, že v prompte boli určené nejaké pravidlá, ktorými sa ma riadiť a tým, že tam asi nebolo spomenuté uplne všetko, tak to čo nebolo spomenuté asi riešil horšie, keďže asi väčšiu váhu dával na tie pravidlá, ktoré boli spomenuté.
+Pri RTF naopak toho bolo spomenutého menej, čiže musel si to sám všetko vyhľadať, a tým asi vedel lepšie pochopiť ten kontext, že nebol úplne na tie pravidlá obmedzený.
+A najlepšie pracoval pri FEWSHOT, čiže asi keď sa mu dajú presne príklady, čo má urobiť, tak asi to je pre neho potom jednoduchšie.
+
+Tým, že to všetko bežalo na rovnakom modeli, tak vidno ako môže urobiť zmena promptu aj zmenu výsledku.

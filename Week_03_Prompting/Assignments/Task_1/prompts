@@ -1,0 +1,54 @@
+
+-------------------------------------------------------
+RTF
+
+Si expert na SQL pre databázu reštaurácií RESTAURANT(ID, NAME, FOOD_TYPE, CITY_NAME, RATING), LOCATION(RESTAURANT_ID, HOUSE_NUMBER, STREET_NAME, CITY_NAME), GEOGRAPHIC(CITY_NAME, COUNTY, REGION).
+
+Prelož každú otázku zo stĺpca question v restaurants_dataset.csv na SQL dopyt.
+
+Výsledky ulož do restaurants_dataset_predictions.csv so stĺpcami question a predicted_sql, kde predicted_sql je vždy iba jeden platný SQL dopyt na jednom riadku. Dopyty iba napíš a ulož. Nespúšťaj ich, neotváraj stĺpec result, nespúšťaj evaluate_retrieval_predictions.py a súbor po uložení už neupravuj.
+
+-------------------------------------------------------
+
+
+-------------------------------------------------------
+ICIO
+
+Prelož každú otázku zo stĺpca question v restaurants_dataset.csv na jeden SQL dopyt.
+
+Databáza reštaurácií:
+RESTAURANT(ID, NAME, FOOD_TYPE, CITY_NAME, RATING)
+LOCATION(RESTAURANT_ID, HOUSE_NUMBER, STREET_NAME, CITY_NAME)
+GEOGRAPHIC(CITY_NAME, COUNTY, REGION)
+Mesto sa filtruje cez l.CITY_NAME, región cez JOIN GEOGRAPHIC g ON r.CITY_NAME = g.CITY_NAME. "Rating above X" je r.RATING > X, "best" je r.RATING = MAX(RATING) s rovnakými filtrami. Hodnoty sú malými písmenami.
+
+Vstup: otázky zo stĺpca question v restaurants_dataset.csv.
+
+Výsledky ulož do restaurants_dataset_predictions.csv so stĺpcami question a predicted_sql, kde predicted_sql je vždy iba jeden platný SQL dopyt na jednom riadku. Dopyty iba napíš a ulož. Nespúšťaj ich, neotváraj stĺpec result, nespúšťaj evaluate_retrieval_predictions.py a súbor po uložení už neupravuj.
+----------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------
+Databáza reštaurácií:
+RESTAURANT(ID, NAME, FOOD_TYPE, CITY_NAME, RATING)
+LOCATION(RESTAURANT_ID, HOUSE_NUMBER, STREET_NAME, CITY_NAME)
+GEOGRAPHIC(CITY_NAME, COUNTY, REGION)
+
+Preložíš otázku na SQL dopyt podľa týchto príkladov.
+
+Otázka: give me a cafe restaurant on clement in san francisco with a rating above 2 (below average or better)?
+SQL: SELECT l.HOUSE_NUMBER, r.NAME FROM RESTAURANT r JOIN LOCATION l ON r.ID = l.RESTAURANT_ID WHERE r.FOOD_TYPE = 'cafe' AND l.STREET_NAME = 'clement' AND l.CITY_NAME = 'san francisco' AND r.RATING > 2
+
+Otázka: where are some restaurants for hunan food in the bay area with a rating above 3 (good or better)?
+SQL: SELECT l.HOUSE_NUMBER, r.NAME FROM RESTAURANT r JOIN LOCATION l ON r.ID = l.RESTAURANT_ID JOIN GEOGRAPHIC g ON r.CITY_NAME = g.CITY_NAME WHERE r.FOOD_TYPE = 'hunan' AND g.REGION = 'bay area' AND r.RATING > 3
+
+Otázka: What is the best californian in portola valley ?
+SQL: SELECT l.HOUSE_NUMBER, r.NAME FROM RESTAURANT r JOIN LOCATION l ON r.ID = l.RESTAURANT_ID WHERE r.FOOD_TYPE = 'californian' AND l.CITY_NAME = 'portola valley' AND r.RATING = (SELECT MAX(r2.RATING) FROM RESTAURANT r2 JOIN LOCATION l2 ON r2.ID = l2.RESTAURANT_ID WHERE r2.FOOD_TYPE = 'californian' AND l2.CITY_NAME = 'portola valley')
+
+Otázka: I cannot choose between noodles and a sandwich, where is a chinese in saratoga with a rating above 1.7 (poorly rated or better)? This reminds me of an unrelated menu puzzle.
+SQL: SELECT l.HOUSE_NUMBER, r.NAME FROM RESTAURANT r JOIN LOCATION l ON r.ID = l.RESTAURANT_ID WHERE r.FOOD_TYPE = 'chinese' AND l.CITY_NAME = 'saratoga' AND r.RATING > 1.7
+
+Takto prelož každú otázku zo stĺpca question v restaurants_dataset.csv.
+
+Výsledky ulož do restaurants_dataset_predictions.csv so stĺpcami question a predicted_sql, kde predicted_sql je vždy iba jeden platný SQL dopyt na jednom riadku. Dopyty iba napíš a ulož. Nespúšťaj ich, neotváraj stĺpec result, nespúšťaj evaluate_retrieval_predictions.py a súbor po uložení už neupravuj.
+---------------------------------------------------------------------------------------------------------------------
