@@ -1,0 +1,2669 @@
+[
+  {
+    "raw_id": "R001",
+    "source": "conversations/conv_pines014_material_volume.eml",
+    "name": "Volume report generation",
+    "description": "The system shall provide the ability to generate a report on the volume of material in a given library at any point in time.",
+    "evidence": "The system should provide the ability to report on the volume of material in a given library at any point in time."
+  },
+  {
+    "raw_id": "R002",
+    "source": "conversations/conv_pines014_material_volume.eml",
+    "name": "Include new acquisitions in reports",
+    "description": "The volume report shall include counts of new acquisitions (items recently added).",
+    "evidence": "The report should allow breaking down volume in categories such as: - New acquisitions"
+  },
+  {
+    "raw_id": "R003",
+    "source": "conversations/conv_pines014_material_volume.eml",
+    "name": "Include checked-in items in reports",
+    "description": "The volume report shall include counts of items that are currently checked in (on the shelf).",
+    "evidence": "The report should allow breaking down volume in categories such as: - Items on the shelf (checked in)"
+  },
+  {
+    "raw_id": "R004",
+    "source": "conversations/conv_pines014_material_volume.eml",
+    "name": "Include checked-out items in reports",
+    "description": "The volume report shall include counts of items that are currently checked out (in circulation).",
+    "evidence": "The report should allow breaking down volume in categories such as: - Items out in circulation (checked out)"
+  },
+  {
+    "raw_id": "R005",
+    "source": "conversations/conv_pines014_material_volume.eml",
+    "name": "Customizable category breakdowns",
+    "description": "The system shall allow customizable breakdowns of volume reports by different categories as needed by different libraries.",
+    "evidence": "Can we make the categories customizable? Different libraries might want different breakdowns."
+  },
+  {
+    "raw_id": "R006",
+    "source": "conversations/conv_pines014_material_volume.eml",
+    "name": "Track holds in reports",
+    "description": "The volume report shall include a count of holds per category.",
+    "evidence": "Shows breakdowns with holds count per category"
+  },
+  {
+    "raw_id": "R007",
+    "source": "conversations/conv_pines014_material_volume.eml",
+    "name": "Historical volume reporting",
+    "description": "The system shall allow for historical comparisons by providing volume reports for any point in time, not just the current volume.",
+    "evidence": "We can also add date filters - volume at any point in time, not just current."
+  },
+  {
+    "raw_id": "R008",
+    "source": "conversations/conv_pines014_material_volume.eml",
+    "name": "Track acquisition dates",
+    "description": "The system shall track the acquisition date for items to facilitate reporting on volume changes over time.",
+    "evidence": "Yes, the database tracks acquisition date for items."
+  },
+  {
+    "raw_id": "R009",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "View all branches' capacity",
+    "description": "The system shall provide an interface that shows the capacity of all branches in the system at once.",
+    "evidence": "The system should provide an interface showing the capacity of all branches."
+  },
+  {
+    "raw_id": "R010",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "High-level overview of capacity",
+    "description": "The system shall include a high-level summary view of all branches' capacity with key metrics.",
+    "evidence": "This should include: - High-level overview of all branches' capacity at once"
+  },
+  {
+    "raw_id": "R011",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "Drill down into individual branches",
+    "description": "The system shall allow users to drill down into individual branches to view their specific capacity.",
+    "evidence": "Ability to drill down into individual branches"
+  },
+  {
+    "raw_id": "R012",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "Sorting capabilities",
+    "description": "The system shall provide sorting capabilities by region, library type, and current load.",
+    "evidence": "I'd want to be able to sort and filter. By region, by library type, by current load..."
+  },
+  {
+    "raw_id": "R013",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "Filtering capabilities",
+    "description": "The system shall provide filtering capabilities for users to refine the displayed data.",
+    "evidence": "I'd want to be able to sort and filter."
+  },
+  {
+    "raw_id": "R014",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "Show trends in capacity",
+    "description": "The system shall display trend data indicating whether a branch is growing or shrinking.",
+    "evidence": "can the capacity interface also show trends? Like, is this branch growing or shrinking?"
+  },
+  {
+    "raw_id": "R015",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "Export to CSV",
+    "description": "The system shall allow users to export capacity data to CSV format for reporting purposes.",
+    "evidence": "...and export to CSV for the directors who want spreadsheets."
+  },
+  {
+    "raw_id": "R016",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "Consideration for data display",
+    "description": "The system shall consider grouping or filtering options to manage the display of data for 286 locations.",
+    "evidence": "One consideration: with 286 locations, the overview might get crowded."
+  },
+  {
+    "raw_id": "R017",
+    "source": "conversations/conv_pines015_capacity_interface.eml",
+    "name": "Define capacity metrics",
+    "description": "The system shall define specific metrics that determine 'capacity', such as number of items vs. shelf space or circulation volume vs. processing capacity.",
+    "evidence": "Also, what specific metrics define 'capacity'? Is it: - Number of items vs. shelf space?"
+  },
+  {
+    "raw_id": "R018",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Percentage of total circulations",
+    "description": "The system shall provide the percentage of total circulations for each genre and format of material.",
+    "evidence": "The system should provide, for each genre and format of material, the ability to compare: - The percentage of total circulations"
+  },
+  {
+    "raw_id": "R019",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Percentage of the collection",
+    "description": "The system shall provide the percentage of the collection for each genre and format of material.",
+    "evidence": "The system should provide, for each genre and format of material, the ability to compare: - The percentage of the collection"
+  },
+  {
+    "raw_id": "R020",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Percentage of total shelf space",
+    "description": "The system shall provide the percentage of total shelf space occupied by each genre and format of material.",
+    "evidence": "The system should provide, for each genre and format of material, the ability to compare: - The percentage of total shelf space"
+  },
+  {
+    "raw_id": "R021",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Report availability per library",
+    "description": "The report shall be available for each library to view their local data.",
+    "evidence": "The report should be available per library and per system."
+  },
+  {
+    "raw_id": "R022",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Report availability per system",
+    "description": "The report shall be available for the entire system to view aggregated data.",
+    "evidence": "The report should be available per library and per system."
+  },
+  {
+    "raw_id": "R023",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Comparison view for libraries",
+    "description": "The system shall include a comparison view that shows each library's breakdown side by side.",
+    "evidence": "Also, can we include a 'comparison' view that shows each library's breakdown side by side?"
+  },
+  {
+    "raw_id": "R024",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Data filtering by date range",
+    "description": "The system shall allow filtering of shelf space utilization data by date range.",
+    "evidence": "Can we also filter by date range?"
+  },
+  {
+    "raw_id": "R025",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Estimation of shelf space",
+    "description": "The system shall estimate shelf space based on item dimensions or item count as a proxy.",
+    "evidence": "The tricky part is #3. Shelf space isn't directly tracked in the database. We'd need to estimate based on item dimensions or use item count as a proxy."
+  },
+  {
+    "raw_id": "R026",
+    "source": "conversations/conv_pines016_shelf_space.eml",
+    "name": "Quarterly data review",
+    "description": "The system shall provide data that can be reviewed quarterly by directors.",
+    "evidence": "Our directors review this data quarterly and need both views."
+  },
+  {
+    "raw_id": "R027",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Batch item transfer utility",
+    "description": "The system shall provide a utility for transferring batches of items between branches.",
+    "evidence": "The system should provide a utility for transferring batches of items between branches."
+  },
+  {
+    "raw_id": "R028",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Query for candidate materials",
+    "description": "The system shall allow users to query for candidate materials for transfer.",
+    "evidence": "Ability to query for candidate materials"
+  },
+  {
+    "raw_id": "R029",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Save queries for repeated use",
+    "description": "The system shall allow users to save queries for repeated use.",
+    "evidence": "Ability to save queries for repeated use"
+  },
+  {
+    "raw_id": "R030",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Manual selection of titles",
+    "description": "The system shall allow users to manually select titles from query results.",
+    "evidence": "Ability to manually select titles from query results"
+  },
+  {
+    "raw_id": "R031",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Change records of selected items",
+    "description": "The system shall allow users to change records of selected items to move them to a new location.",
+    "evidence": "Ability to change records of selected items to move to new location"
+  },
+  {
+    "raw_id": "R032",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Change location field mechanism",
+    "description": "The system shall provide a mechanism for changing the location field of items being transferred.",
+    "evidence": "Mechanisms: changing location field"
+  },
+  {
+    "raw_id": "R033",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Generate pull lists",
+    "description": "The system shall generate pull lists for items to be moved.",
+    "evidence": "Mechanisms: ... generating pull lists"
+  },
+  {
+    "raw_id": "R034",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Revert items to original location",
+    "description": "The system shall allow items to be reverted to their original location after a set period of time or based on other criteria.",
+    "evidence": "Ability to revert items to original location after a set period of time and/or based on other criteria"
+  },
+  {
+    "raw_id": "R035",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Preview before changes",
+    "description": "The system shall provide a preview of changes before they are made to confirm the transfer.",
+    "evidence": "Preview before making changes"
+  },
+  {
+    "raw_id": "R036",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Undo function",
+    "description": "The system shall provide an undo function to revert accidental transfers.",
+    "evidence": "And we need an undo function!"
+  },
+  {
+    "raw_id": "R037",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Permission control",
+    "description": "The system shall limit item transfer permissions to certain roles such as managers and administrators.",
+    "evidence": "Not every staff member should be able to transfer items between branches."
+  },
+  {
+    "raw_id": "R038",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Transfer history tracking",
+    "description": "The system shall track the transfer history of items, indicating how many times they have been transferred.",
+    "evidence": "Can we track transfer history?"
+  },
+  {
+    "raw_id": "R039",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Event-based auto-revert",
+    "description": "The system shall support event-based auto-reversion of items based on status changes.",
+    "evidence": "Revert when item status changes to 'returned' (event-based)"
+  },
+  {
+    "raw_id": "R040",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Time-based auto-revert",
+    "description": "The system shall support time-based auto-reversion of items after a specified period.",
+    "evidence": "Revert after X days (date-based)"
+  },
+  {
+    "raw_id": "R041",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Printable transit labels",
+    "description": "The system shall generate printable transit labels for items being transferred.",
+    "evidence": "Can we generate transit labels?"
+  },
+  {
+    "raw_id": "R042",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Transfer delay alerts",
+    "description": "The system shall notify users if an item transfer is delayed or has issues.",
+    "evidence": "can we set up alerts? If an item transfer is delayed or has issues, notify me."
+  },
+  {
+    "raw_id": "R043",
+    "source": "conversations/conv_pines018_item_transfer.eml",
+    "name": "Efficient batch updates",
+    "description": "The system shall ensure that batch updates are efficient to handle large volumes of items without locking the database.",
+    "evidence": "with 9.6 million items, batch updates need to be efficient."
+  },
+  {
+    "raw_id": "R044",
+    "source": "conversations/conv_pines019_020_missing_intransit.eml",
+    "name": "Missing and Damaged Items Report",
+    "description": "The system shall provide reports of missing and damaged items per branch.",
+    "evidence": "System provides reports of missing and damaged items per branch."
+  },
+  {
+    "raw_id": "R045",
+    "source": "conversations/conv_pines019_020_missing_intransit.eml",
+    "name": "In-Transit Items Report",
+    "description": "The system shall generate a list of items that have been in-transit for more than X days, where X is configurable, per branch and per system.",
+    "evidence": "System generates a list of items that have been in-transit for more than X days (X configurable), per branch and per system."
+  },
+  {
+    "raw_id": "R046",
+    "source": "conversations/conv_pines019_020_missing_intransit.eml",
+    "name": "Merge Transit Reports",
+    "description": "The in-transit report shall merge transit-to and transit-from into one report for ease of front-line staff.",
+    "evidence": "The report merges transit-to and transit-from into one report for ease of front-line staff."
+  },
+  {
+    "raw_id": "R047",
+    "source": "conversations/conv_pines019_020_missing_intransit.eml",
+    "name": "Sort In-Transit Report by Due Date",
+    "description": "The in-transit report shall allow sorting by due date to prioritize the oldest items.",
+    "evidence": "can we sort by due date? Front-line staff need to chase the oldest items first."
+  },
+  {
+    "raw_id": "R048",
+    "source": "conversations/conv_pines019_020_missing_intransit.eml",
+    "name": "Configurable Days for In-Transit",
+    "description": "The system shall allow configuration of the number of days to determine when an item is considered in-transit.",
+    "evidence": "X should be configurable, probably 7 days default."
+  },
+  {
+    "raw_id": "R049",
+    "source": "conversations/conv_pines019_020_missing_intransit.eml",
+    "name": "Include Item Condition Notes",
+    "description": "The missing/damaged report shall include item condition notes such as 'water damage' or 'vandalism'.",
+    "evidence": "can the report include item condition notes? Like 'water damage' or 'vandalism'?"
+  },
+  {
+    "raw_id": "R050",
+    "source": "conversations/conv_pines019_020_missing_intransit.eml",
+    "name": "Date Range for Missing/Damaged Report",
+    "description": "The missing/damaged report shall include options for date ranges such as last 30 days or last quarter.",
+    "evidence": "The missing/damaged report can include date ranges (e.g., last 30 days, last quarter, etc.) which would be useful for trending."
+  },
+  {
+    "raw_id": "R051",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Customizable criteria for purging",
+    "description": "The system shall allow users to identify item records to purge based on customizable criteria, such as status and duration.",
+    "evidence": "I need to identify item records to purge based on customizable criteria."
+  },
+  {
+    "raw_id": "R052",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Batch status conversion report",
+    "description": "The system shall provide a report to assist in converting items from one status to another in batch.",
+    "evidence": "I need a report to help convert items from one status to another in batch."
+  },
+  {
+    "raw_id": "R053",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Last copy report",
+    "description": "The system shall provide a 'last copy report' that identifies the library system's last copies to prevent accidental deletion of the only copy.",
+    "evidence": "We need a 'last copy report' that identifies our library system's last copies."
+  },
+  {
+    "raw_id": "R054",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Quick deletion of volume and copy entries",
+    "description": "The system shall provide a quick method to delete volume entries along with copy entries and records with no items attached.",
+    "evidence": "We also need a quick way to delete volume entries along with copy entries, and delete records with no items attached."
+  },
+  {
+    "raw_id": "R055",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Read-only reports for purging candidates",
+    "description": "The system shall provide read-only reports that show candidates for purging without allowing immediate deletion.",
+    "evidence": "Reports show candidates for purging (read-only)."
+  },
+  {
+    "raw_id": "R056",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Confirmation step for deletions",
+    "description": "The system shall include a separate confirmation step for actual deletions to prevent accidental data loss.",
+    "evidence": "A separate confirmation step for actual deletions."
+  },
+  {
+    "raw_id": "R057",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Audit trail for purges",
+    "description": "The system shall maintain an audit trail for all purges to track who purged what and when.",
+    "evidence": "We need to track who purged what and when."
+  },
+  {
+    "raw_id": "R058",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Combine purging criteria",
+    "description": "The system shall allow users to combine different criteria for purging items, such as status, time, and activity.",
+    "evidence": "Can we combine these?"
+  },
+  {
+    "raw_id": "R059",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Scheduled purging utility",
+    "description": "The system shall allow the purging utility to be scheduled to run automatically at specified intervals, such as annually.",
+    "evidence": "can the purging utility be scheduled?"
+  },
+  {
+    "raw_id": "R060",
+    "source": "conversations/conv_pines021_item_purging.eml",
+    "name": "Last copy report per system",
+    "description": "The last copy report shall be available per system, not just per library, to ensure comprehensive oversight.",
+    "evidence": "the 'last copy report' should definitely be available per system, not just per library."
+  },
+  {
+    "raw_id": "R061",
+    "source": "conversations/conv_pines022_deletions.eml",
+    "name": "Track record deletions",
+    "description": "The system shall count and track record deletions (item records, patron records) per location and per system for auditing purposes.",
+    "evidence": "We need to be able to count and track record deletions (item records, patron records) per location and per system."
+  },
+  {
+    "raw_id": "R062",
+    "source": "conversations/conv_pines022_deletions.eml",
+    "name": "Log deletion details",
+    "description": "The system shall log details of deletions including record type, timestamp, user who performed the deletion, and location of the user.",
+    "evidence": "Tracking should include: - Record type - Timestamp - User who performed the deletion - Location of the user."
+  },
+  {
+    "raw_id": "R063",
+    "source": "conversations/conv_pines022_deletions.eml",
+    "name": "Track denied deletion attempts",
+    "description": "The system shall track attempted deletions that were denied to assist with compliance and troubleshooting.",
+    "evidence": "Can we also track attempted deletions that were denied?"
+  },
+  {
+    "raw_id": "R064",
+    "source": "conversations/conv_pines022_deletions.eml",
+    "name": "Generate deletion reports",
+    "description": "The system shall provide a report interface to query the audit table for deletions per location and per system, aggregating by date range, user, and record type.",
+    "evidence": "A report interface to query this audit table."
+  },
+  {
+    "raw_id": "R065",
+    "source": "conversations/conv_pines022_deletions.eml",
+    "name": "Total deletions report",
+    "description": "The system shall generate reports showing total deletions per period (month, quarter, year).",
+    "evidence": "From an administrative perspective, we need reports showing: - Total deletions per period (month, quarter, year)."
+  },
+  {
+    "raw_id": "R066",
+    "source": "conversations/conv_pines022_deletions.eml",
+    "name": "Deletions by type report",
+    "description": "The system shall generate reports showing deletions by type (item vs patron vs other).",
+    "evidence": "- Deletions by type (item vs patron vs other)."
+  },
+  {
+    "raw_id": "R067",
+    "source": "conversations/conv_pines022_deletions.eml",
+    "name": "Deletions by location report",
+    "description": "The system shall generate reports showing deletions by location.",
+    "evidence": "- Deletions by location."
+  },
+  {
+    "raw_id": "R068",
+    "source": "conversations/conv_pines022_deletions.eml",
+    "name": "Top users report",
+    "description": "The system shall generate reports showing the top users who delete the most records.",
+    "evidence": "- Top users who delete the most records."
+  },
+  {
+    "raw_id": "R069",
+    "source": "conversations/conv_pines023_patron_characteristics.eml",
+    "name": "Report patron demographics",
+    "description": "The system shall allow users to run reports on patrons grouped by characteristics such as age range, zip code, county of residence, home branch, patron type, and preferred language.",
+    "evidence": "I need to run reports on patrons grouped by characteristics."
+  },
+  {
+    "raw_id": "R070",
+    "source": "conversations/conv_pines023_patron_characteristics.eml",
+    "name": "Support grouping by fields",
+    "description": "The system shall support grouping reports by various fields, including age range and home branch.",
+    "evidence": "Can we also GROUP BY these fields?"
+  },
+  {
+    "raw_id": "R071",
+    "source": "conversations/conv_pines023_patron_characteristics.eml",
+    "name": "Support limiting patron reports",
+    "description": "The system shall allow users to limit reports based on specific patron characteristics, such as zip code.",
+    "evidence": "I need to be able to both LIMIT and GROUP BY patron characteristics."
+  },
+  {
+    "raw_id": "R072",
+    "source": "conversations/conv_pines023_patron_characteristics.eml",
+    "name": "Configurable age ranges",
+    "description": "The system shall allow age ranges to be configurable for reports, enabling users to define custom age brackets.",
+    "evidence": "The age ranges need to be configurable too."
+  },
+  {
+    "raw_id": "R073",
+    "source": "conversations/conv_pines023_patron_characteristics.eml",
+    "name": "Combine demographic filters",
+    "description": "The system shall allow users to combine demographic filters in reports using AND/OR logic.",
+    "evidence": "Can we combine demographic filters?"
+  },
+  {
+    "raw_id": "R074",
+    "source": "conversations/conv_pines023_patron_characteristics.eml",
+    "name": "Include null values in reports",
+    "description": "The system shall include records with null values for optional fields in the report results.",
+    "evidence": "We should include them in the report (with null values) rather than excluding them."
+  },
+  {
+    "raw_id": "R075",
+    "source": "conversations/conv_pines023_patron_characteristics.eml",
+    "name": "Technical feasibility of queries",
+    "description": "The system shall support straightforward queries for the specified patron characteristics as they exist in the patron table.",
+    "evidence": "From a technical standpoint, these queries are straightforward."
+  },
+  {
+    "raw_id": "R076",
+    "source": "conversations/conv_pines023_patron_characteristics.eml",
+    "name": "Support for AND/OR logic in filters",
+    "description": "The system shall support both AND and OR logic when combining filters in reports.",
+    "evidence": "Combining filters is also doable - just add WHERE clauses."
+  },
+  {
+    "raw_id": "R077",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Inactive patrons report generation",
+    "description": "The system shall generate a list of patrons with no circulation or electronic activity in the last X days, where X is configurable.",
+    "evidence": "The system should generate a list of patrons with no circulation or electronic activity in the last X days (X configurable)."
+  },
+  {
+    "raw_id": "R078",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Configurable inactivity period",
+    "description": "The system shall allow the configuration of the inactivity period X to any number of days, including common ranges like 30, 90, 180, and 365 days.",
+    "evidence": "what ranges make sense? - 30 days (monthly check) - 90 days (quarterly check) - 180 days (semi-annual) - 365 days (annual) Can we make it fully customizable? Like any number of days?"
+  },
+  {
+    "raw_id": "R079",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Configurable report levels",
+    "description": "The system shall allow the report to be configurable to different levels such as System, Home Library, County, and other levels as needed.",
+    "evidence": "The list should be configurable to different levels - System, Home Library, County, etc."
+  },
+  {
+    "raw_id": "R080",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Include current mailing addresses",
+    "description": "The report shall include current mailing addresses for outreach purposes.",
+    "evidence": "the report needs to include current mailing addresses."
+  },
+  {
+    "raw_id": "R081",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Track inactive patrons with fines separately",
+    "description": "The system shall track inactive patrons who still owe fines separately from those who do not.",
+    "evidence": "And yes, we should track inactive patrons who still owe fines separately."
+  },
+  {
+    "raw_id": "R082",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Exclude certain patrons from report",
+    "description": "The system shall allow exclusion of certain patron types from the inactive report, such as those with 'do not disturb' flags, VIP patrons, staff members, and patrons who have opted out of communications.",
+    "evidence": "we should be able to EXCLUDE certain patrons from the inactive report."
+  },
+  {
+    "raw_id": "R083",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Exportable report format",
+    "description": "The report shall be exportable in a format such as CSV for integration with outreach systems.",
+    "evidence": "the report should be exportable."
+  },
+  {
+    "raw_id": "R084",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Background processing for performance",
+    "description": "The system shall run the report as a background process to improve performance, especially for large patron databases.",
+    "evidence": "this query could be slow. We should run it as a background report and cache results."
+  },
+  {
+    "raw_id": "R085",
+    "source": "conversations/conv_pines024_inactive_patrons.eml",
+    "name": "Define electronic activity",
+    "description": "The system shall define electronic activity to include OPAC login, online hold placements, online renewals, and access to digital collections if integrated.",
+    "evidence": "'Electronic activity' should include: 1. Logging into OPAC/patron account 2. Placing holds online 3. Renewing items online 4. Accessing digital collections (if integrated)"
+  },
+  {
+    "raw_id": "R086",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Support for library consortium",
+    "description": "The system must support a library consortium with 286 locations, 17 million annual circulations, and purchasing/processing over 900,000 items per year.",
+    "evidence": "OE-1: The system must support a library consortium with 286 locations, 17 million annual circulations, and purchasing/processing over 900,000 items per year."
+  },
+  {
+    "raw_id": "R087",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Processing during open hours",
+    "description": "It is highly desirable that searches and reports can be processed during open hours without disrupting other system functions.",
+    "evidence": "OE-1: It is highly desirable that searches and reports can be processed during open hours without disrupting other system functions."
+  },
+  {
+    "raw_id": "R088",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Operating system compatibility",
+    "description": "The system must operate on a Linux or Solaris server environment.",
+    "evidence": "OE-2: The system must operate on a Linux or Solaris server environment."
+  },
+  {
+    "raw_id": "R089",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Web access",
+    "description": "The system must be accessible through a web browser or a Windows-compatible client.",
+    "evidence": "OE-3: The system must be accessible through a web browser or a Windows-compatible client."
+  },
+  {
+    "raw_id": "R090",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Browser compatibility",
+    "description": "If web-browser based, the system must be accessible through Microsoft Internet Explorer (version 6.0 and later) and Mozilla Firefox (version 2.0 and later).",
+    "evidence": "OE-4: If web-browser based, the system must be accessible through Microsoft Internet Explorer (version 6.0 and later) and Mozilla Firefox (version 2.0 and later)."
+  },
+  {
+    "raw_id": "R091",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Accessibility support",
+    "description": "The system must be accessible with screen-reading software, screen-magnification software, and other assistive technology programs designed to increase accessibility.",
+    "evidence": "OE-5: The system must be accessible with screen-reading software, screen-magnification software, and other assistive technology programs designed to increase accessibility."
+  },
+  {
+    "raw_id": "R092",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Relational database requirement",
+    "description": "The system must use a fully relational database back-end.",
+    "evidence": "CO-1: The system must use a fully relational database back-end."
+  },
+  {
+    "raw_id": "R093",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Standards-compliant HTML output",
+    "description": "The system must produce standards-compliant HTML output for web-based components.",
+    "evidence": "CO-2: The system must produce standards-compliant HTML output for web-based components."
+  },
+  {
+    "raw_id": "R094",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Development and training environment",
+    "description": "The system must provide a development and training environment with the ability to migrate configurations to a production environment.",
+    "evidence": "CO-3: The system must provide a development and training environment with the ability to migrate configurations to a production environment."
+  },
+  {
+    "raw_id": "R095",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "User rights and privileges management",
+    "description": "User rights and privileges will be controlled through security groups and or 'roles' that allow access control for individuals, workgroups, and arbitrary staff groups.",
+    "evidence": "CO-4: User rights and privileges will be controlled through security groups and or 'roles' that allow access control for individuals, workgroups, and arbitrary staff groups."
+  },
+  {
+    "raw_id": "R096",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "No constraints on OPAC functionality",
+    "description": "These requirements must not constrain functionality or features of the Online Public Access Catalog (OPAC) module.",
+    "evidence": "CO-5: These requirements must not constrain functionality or features of the Online Public Access Catalog (OPAC) module."
+  },
+  {
+    "raw_id": "R097",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Complete data specifications",
+    "description": "The developer must provide complete data specifications for authority records, bibliographic records, order records, item records, hold/request records, and other records maintained or accessed by the Management Processes.",
+    "evidence": "UD-1: The developer must provide complete data specifications for authority records, bibliographic records, order records, item records, hold/request records, and other records maintained or accessed by the Management Processes."
+  },
+  {
+    "raw_id": "R098",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "High-level process descriptions",
+    "description": "The developer must provide a thorough high-level description of major processes, including bibliographic record import and export, validation of bibliographic records against internal and external authority sources, and standard reports.",
+    "evidence": "UD-2: The developer must provide a thorough high-level description of major processes, including bibliographic record import and export, validation of bibliographic records against internal and external authority sources, and standard reports."
+  },
+  {
+    "raw_id": "R099",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Online help system",
+    "description": "The system must provide an online, hierarchical, and cross-linked help system in HTML that describes and illustrates all system functions.",
+    "evidence": "UD-3: The system must provide an online, hierarchical, and cross-linked help system in HTML that describes and illustrates all system functions."
+  },
+  {
+    "raw_id": "R100",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Error reporting and feedback",
+    "description": "The system must provide thorough high-level error reporting and feedback, and shall allow low-level query-specific feedback for Local and Global System Administrators from the front-end interface.",
+    "evidence": "UD-4: The system must provide thorough high-level error reporting and feedback, and shall allow low-level query-specific feedback for Local and Global System Administrators from the front-end interface."
+  },
+  {
+    "raw_id": "R101",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Streamlined staff login methods",
+    "description": "The system should support streamlined methods of logging into terminals, such as card swiping or traditional username/password.",
+    "evidence": "8.1 Staff Login: The system should support streamlined methods of logging into terminals."
+  },
+  {
+    "raw_id": "R102",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Report template creation",
+    "description": "System administrators should be able to create report templates that are available to staff, which can be runnable as-is or modifiable for individual needs.",
+    "evidence": "8.2 Report Templates: System administrators should be able to create report templates that are available to staff."
+  },
+  {
+    "raw_id": "R103",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Report accuracy certification",
+    "description": "Changes to report templates should not compromise the accuracy of results.",
+    "evidence": "Changes to templates should not compromise the accuracy of results."
+  },
+  {
+    "raw_id": "R104",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Report permissions management",
+    "description": "The system should provide distinct, fine-grained permission levels that limit who can create and clone reports.",
+    "evidence": "8.3 Report Permissions: The system should provide distinct, fine-grained permission levels that limit who can create and clone reports."
+  },
+  {
+    "raw_id": "R105",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "User-friendly query interface",
+    "description": "The system should provide a user-friendly interface for designing queries against all record types.",
+    "evidence": "8.4 Query Tool: The system should provide a user-friendly interface for designing queries against all record types."
+  },
+  {
+    "raw_id": "R106",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Pre-defined board reports",
+    "description": "The system should provide pre-defined reports for consumption by library boards and other external consumers.",
+    "evidence": "8.5 Board Reports / Executive Reports: The system should provide pre-defined reports for consumption by library boards and other external consumers."
+  },
+  {
+    "raw_id": "R107",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Transaction archiving with privacy",
+    "description": "Transactions should be archived in a form that protects patron privacy as defined by State Law, while providing useful demographic statistics.",
+    "evidence": "8.6 Transaction Data Archiving: Transactions should be archived in a form that protects patron privacy as defined by State Law."
+  },
+  {
+    "raw_id": "R108",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Periodic report examples",
+    "description": "The system should support various periodic report examples, such as bibliographic records with holds and items that have not been checked out in X days.",
+    "evidence": "8.7 Periodic Report Examples: Examples of periodic reports include: Bibliographic records with holds."
+  },
+  {
+    "raw_id": "R109",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Display query selections with results",
+    "description": "The system should provide the query selections along with the results, so users can see what criteria were used to generate the report.",
+    "evidence": "8.8 Query Selections Display: The system should provide the query selections along with the results."
+  },
+  {
+    "raw_id": "R110",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Report queue visibility",
+    "description": "Staff should be able to see where their report is in the queue of reports waiting to run.",
+    "evidence": "8.9 Report Queue: Staff should be able to see where their report is in the queue of reports waiting to run."
+  },
+  {
+    "raw_id": "R111",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Support for reporting definitions",
+    "description": "The system must be able to support the reporting definitions as described in the attached report examples.",
+    "evidence": "8.10 Canned Report Examples: The system must be able to support the reporting definitions as described in the attached report examples."
+  },
+  {
+    "raw_id": "R112",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Support for fine-grained reports",
+    "description": "The system must be able to support the fine-grained reports requirements as described in the attached specification.",
+    "evidence": "8.11 Fine-Grained Reporting Requirements: The system must be able to support the fine-grained reports requirements as described in the attached specification."
+  },
+  {
+    "raw_id": "R113",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Statistics on patron behavior",
+    "description": "The system should produce statistics that can be used to understand and predict patron behavior and use of materials.",
+    "evidence": "9.1 Patron Behavior and Use Analysis: The system should produce statistics that can be used to understand and predict patron behavior and use of materials."
+  },
+  {
+    "raw_id": "R114",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Anonymized demographic statistics",
+    "description": "The system should produce useful demographic statistics, including transactions by geographical regions, age ranges, etc., with anonymized data.",
+    "evidence": "9.2 Demographic Statistics: The system should produce useful demographic statistics, including transactions by geographical regions, age ranges, etc."
+  },
+  {
+    "raw_id": "R115",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Material volume reporting",
+    "description": "Ability to report on the volume of material in a given library at any point in time, based on new acquisitions, items on the shelf, and items out in circulation.",
+    "evidence": "10.1 Material Volume Report: Ability to report on the volume of material in a given library at any point in time."
+  },
+  {
+    "raw_id": "R116",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Branch capacity interface",
+    "description": "The system should provide an interface showing the capacity of all branches.",
+    "evidence": "10.2 System Capacity Interface: The system should provide an interface showing the capacity of all branches."
+  },
+  {
+    "raw_id": "R117",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Shelf space reporting",
+    "description": "Ability to compare the percentage of total circulations, the percentage of the collection, and the percentage of total shelf space for each genre and format of material.",
+    "evidence": "10.3 Shelf Space Report: For each genre and format of material, ability to compare: the percentage of total circulations."
+  },
+  {
+    "raw_id": "R118",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Inventory control for uncataloged material",
+    "description": "Ability to control inventory of uncataloged material, such as paperback books and children's board books.",
+    "evidence": "10.4 Uncataloged Material: Ability to control inventory of uncataloged material, such as paperback books and children's board books."
+  },
+  {
+    "raw_id": "R119",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Item transfer utility",
+    "description": "System should provide a utility for transferring batches of items between branches, including querying for candidate materials and changing records of selected items.",
+    "evidence": "10.5 Item Transfer Utility: System should provide a utility for transferring batches of items between branches."
+  },
+  {
+    "raw_id": "R120",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Missing and damaged items reporting",
+    "description": "The system should provide reports of missing and damaged items per branch.",
+    "evidence": "10.6 Missing and Damaged Items Report: The system should provide reports of missing and damaged items per branch."
+  },
+  {
+    "raw_id": "R121",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "In-transit items reporting",
+    "description": "The system should generate a list of items that have been in-transit for more than X days, per branch and per system.",
+    "evidence": "10.7 In-Transit Items Report: The system should generate a list of items that have been in-transit for more than X days."
+  },
+  {
+    "raw_id": "R122",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Item record purging utility",
+    "description": "The system should provide a utility and reports for identifying item records to purge based on customizable criteria.",
+    "evidence": "10.8 Item Record Purging: The system should provide a utility and reports for identifying item records to purge."
+  },
+  {
+    "raw_id": "R123",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Record deletions tracking",
+    "description": "Ability to count and track record deletions per location and per system.",
+    "evidence": "10.9 Deletions Tracking: Ability to count and track record deletions (e.g., item records, patron records) per location and per system."
+  },
+  {
+    "raw_id": "R124",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Patron characteristics filtering",
+    "description": "Queries and reports can be limited or grouped by various patron characteristics, including age range, zip code, and county of residence.",
+    "evidence": "11.1 Patron Characteristics: Queries and reports can be limited or grouped by various patron characteristics."
+  },
+  {
+    "raw_id": "R125",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Inactive patrons reporting",
+    "description": "The system should generate a list of patrons with no circulation or electronic activity in the last X days.",
+    "evidence": "11.2 Inactive Patrons Report: The system should generate a list of patrons with no circulation or electronic activity in the last X days."
+  },
+  {
+    "raw_id": "R126",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Transaction history maintenance",
+    "description": "Transaction history is maintained for X days, with monthly and annual aggregate information maintained indefinitely.",
+    "evidence": "12.1 Transaction History Maintenance: Transaction history is maintained for X days."
+  },
+  {
+    "raw_id": "R127",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Backroom statistics grouping",
+    "description": "Transactions can be grouped by hour, terminal, branch, and system, including various transaction types.",
+    "evidence": "12.2 Backroom Statistics Examples: Transactions can be grouped by hour, terminal, branch, and system."
+  },
+  {
+    "raw_id": "R128",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Check-in types counting",
+    "description": "The system counts all types of check-in individually and cumulatively, including book-drop and by terminal.",
+    "evidence": "12.3 Types of Check-In: The system counts all types of check-in individually and cumulatively."
+  },
+  {
+    "raw_id": "R129",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Check-out types counting",
+    "description": "The system counts all types of check-out individually and cumulatively, including staff check-out and self check-out.",
+    "evidence": "12.4 Types of Check-Out: The system counts all types of check-out individually and cumulatively."
+  },
+  {
+    "raw_id": "R130",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Holds counting",
+    "description": "The system counts all hold requests, including how the hold was placed.",
+    "evidence": "12.5 Holds and Locations: The system counts all hold requests, including how the hold was placed."
+  },
+  {
+    "raw_id": "R131",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Transaction report generation",
+    "description": "The system can generate a report of transactions per patron, per library, and per selected group of libraries.",
+    "evidence": "12.6 Transactions Report: The system can generate a report of transactions (holds placed, holds filled, and check-outs) per patron."
+  },
+  {
+    "raw_id": "R132",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Value of items reporting",
+    "description": "The system can generate a report of the value of items in the entire collection or a portion.",
+    "evidence": "13.1 Value of Items Report: The system can generate a report of the value of items in the entire collection or a portion."
+  },
+  {
+    "raw_id": "R133",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Compliance with accounting standards",
+    "description": "All reports and data archiving must comply with standard accounting practice and state, county, and municipal auditing requirements.",
+    "evidence": "13.2 Standard Accounting Practice and Auditing Requirements: All reports and data archiving must comply with standard accounting practice."
+  },
+  {
+    "raw_id": "R134",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Financial data tracking",
+    "description": "Fines, charges, waivers, and ecommerce transactions are attached to patron and item records, with easy updates.",
+    "evidence": "13.3 Financial Data (Patrons): Fines, charges, waivers, and ecommerce transactions are attached to patron and item records."
+  },
+  {
+    "raw_id": "R135",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Financial report generation",
+    "description": "The system provides financial reports including patron account balances and fines accrued per time period.",
+    "evidence": "13.4 Financial Reports: The system provides financial reports including patron account balances by patron, home library, and system."
+  },
+  {
+    "raw_id": "R136",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Financial audit trail maintenance",
+    "description": "The system maintains a ledger of patron payments, including which charges payments are applied to, to facilitate reconciliation.",
+    "evidence": "13.5 Financial Audit Trail: The system maintains a ledger of patron payments."
+  },
+  {
+    "raw_id": "R137",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Canned reports interface",
+    "description": "Three interfaces are needed: canned reports, noncanned reports, and open template reporting.",
+    "evidence": "15.1 Three Interfaces: Three interfaces are needed."
+  },
+  {
+    "raw_id": "R138",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Canned reports functionality",
+    "description": "Canned reports are generic reports set to run by the individual either ASAP or recurring, with the ability to run multiple at once.",
+    "evidence": "15.2 Canned Reports Details: Canned reports are generic reports set to run by the individual either ASAP or recurring."
+  },
+  {
+    "raw_id": "R139",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "On-demand reports functionality",
+    "description": "On Demand Reports would be for pre-selected criteria but for maintenance reports or collections development and would be set to run on demand.",
+    "evidence": "15.3 On Demand Reports: On Demand Reports would be for pre-selected criteria."
+  },
+  {
+    "raw_id": "R140",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Open template reporting functionality",
+    "description": "Open template reporting would have all attributes associated with circulation, patrons, items, bills, and bibs to select from for filtering and displaying.",
+    "evidence": "15.4 Open Template Reporting: Open template would have all attributes associated with circulation, patrons, items, bills, and bibs."
+  },
+  {
+    "raw_id": "R141",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Quick access interface features",
+    "description": "The system should provide a quick access interface with features like hover descriptions, email address entry for reports, and output formats.",
+    "evidence": "15.5 Quick Access Interface: Ability to hover over each title of canned report/template with pop-up box with description."
+  },
+  {
+    "raw_id": "R142",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Real-time reporting capability",
+    "description": "Ability to have real-time reporting.",
+    "evidence": "Ability to have real time reporting."
+  },
+  {
+    "raw_id": "R143",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Historical reporting capability",
+    "description": "Ability to have historical reporting with a reporting warehouse for data acquisition on a given date or date range.",
+    "evidence": "Ability to have historical reporting - a reporting warehouse such that data can be acquired on a given date or date range."
+  },
+  {
+    "raw_id": "R144",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Clear selection criteria definition",
+    "description": "Selection criteria is clearly defined in the reporting system.",
+    "evidence": "Selection criteria is clearly defined."
+  },
+  {
+    "raw_id": "R145",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Report results date criteria inclusion",
+    "description": "Report results would include the date selection criteria at the top or bottom to quickly see date range selected along with the name of the report.",
+    "evidence": "Report results would include the date selection criteria at the top or bottom."
+  },
+  {
+    "raw_id": "R146",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Survey name selection for reports",
+    "description": "Ability to select the survey name and not have to enter the survey id for filtering.",
+    "evidence": "Ability to select the survey name and not have to enter the survey id for filtering."
+  },
+  {
+    "raw_id": "R147",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Deleted items reporting",
+    "description": "Ability to run a report on deleted items that were the last copy in the facility.",
+    "evidence": "Ability to run a report on deleted items that were the last copy in the facility."
+  },
+  {
+    "raw_id": "R148",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "MARC record fields retrieval",
+    "description": "Ability to pull MARC record fields so that they appear on a single row of data.",
+    "evidence": "Ability to pull MARC record fields so that they appear on a single row of data."
+  },
+  {
+    "raw_id": "R149",
+    "source": "early_draft_srs_galecia.txt",
+    "name": "Transaction reporting by date and time",
+    "description": "Ability to run a report on transactions that occurred on x date and time on x workstation or by x staff.",
+    "evidence": "Ability to run a report on transactions that occurred on x date and time on x workstation or by x staff."
+  },
+  {
+    "raw_id": "R150",
+    "source": "email_financial_reports.eml",
+    "name": "Value of items report",
+    "description": "The system shall generate a report of the value of items based on data in item records, for the entire collection or a portion of it.",
+    "evidence": "System can generate a report of the value of items (based on data in item record) in the entire collection or a portion."
+  },
+  {
+    "raw_id": "R151",
+    "source": "email_financial_reports.eml",
+    "name": "Value of long overdue items",
+    "description": "The system shall allow staff to obtain the value of all items with the status 'longoverdue'.",
+    "evidence": "value of all items with status 'longoverdue'"
+  },
+  {
+    "raw_id": "R152",
+    "source": "email_financial_reports.eml",
+    "name": "Value of children's DVDs",
+    "description": "The system shall allow staff to obtain the value of all DVDs in the children's collection.",
+    "evidence": "value of all DVDs in children's collection"
+  },
+  {
+    "raw_id": "R153",
+    "source": "email_financial_reports.eml",
+    "name": "Value of entire collection",
+    "description": "The system shall allow staff to obtain the value of the entire collection.",
+    "evidence": "value of entire collection"
+  },
+  {
+    "raw_id": "R154",
+    "source": "email_financial_reports.eml",
+    "name": "Compliance with accounting standards",
+    "description": "All reports and data archiving must comply with standard accounting practice and state, county, and municipal auditing requirements.",
+    "evidence": "All reports and data archiving must comply with standard accounting practice and state, county, and municipal auditing requirements."
+  },
+  {
+    "raw_id": "R155",
+    "source": "email_financial_reports.eml",
+    "name": "Audit trail for payments",
+    "description": "The system must maintain a ledger of patron payments, including which charges payments are applied to, to facilitate reconciliation.",
+    "evidence": "The system maintains a ledger of patron payments, including which charges payments are applied to, to facilitate reconciliation."
+  },
+  {
+    "raw_id": "R156",
+    "source": "email_financial_reports.eml",
+    "name": "Track fines and charges",
+    "description": "The system shall provide reports on fines and charges accrued per time period and per type of charge.",
+    "evidence": "Fines and charges accrued per time period (last 12 months, YTD, last month) and per type of charge (overdue fines, damaged item charges, lost item charges, etc.)"
+  },
+  {
+    "raw_id": "R157",
+    "source": "email_financial_reports.eml",
+    "name": "Track fines waived",
+    "description": "The system shall track fines waived per time period and per branch.",
+    "evidence": "Fines waived per time period and per branch"
+  },
+  {
+    "raw_id": "R158",
+    "source": "email_financial_reports.eml",
+    "name": "Payments tracking by method",
+    "description": "The system shall provide reports on payments made per time period and per payment method.",
+    "evidence": "Payments made per time period and per payment method (staff desk, self-check station, OPAC)"
+  },
+  {
+    "raw_id": "R159",
+    "source": "email_financial_reports.eml",
+    "name": "Query patron accounts with high balances",
+    "description": "The system shall allow staff to query patron accounts with balances greater than a specified amount.",
+    "evidence": "staff should be able to query patron accounts with balances greater than X dollars."
+  },
+  {
+    "raw_id": "R160",
+    "source": "email_financial_reports.eml",
+    "name": "Immediate update of financial information",
+    "description": "The system shall allow immediate updates to financial information when a patron makes a payment.",
+    "evidence": "financial information needs to be easily updatable."
+  },
+  {
+    "raw_id": "R161",
+    "source": "email_financial_reports.eml",
+    "name": "Payments tracking by library",
+    "description": "The system shall track payments collected at each library for end-of-month reports.",
+    "evidence": "Payments tracking by library is important for our end-of-month reports."
+  },
+  {
+    "raw_id": "R162",
+    "source": "email_financial_reports.eml",
+    "name": "Join financial data sources",
+    "description": "The system shall allow querying of financial reports by joining patron and item records.",
+    "evidence": "the financial data is attached to patron records AND item records."
+  },
+  {
+    "raw_id": "R163",
+    "source": "email_financial_reports.eml",
+    "name": "Retention policies for data archiving",
+    "description": "The system must enforce data retention policies, retaining some data for 7 years for audit purposes.",
+    "evidence": "Some data needs to be retained for 7 years for audit purposes."
+  },
+  {
+    "raw_id": "R164",
+    "source": "email_report_features.eml",
+    "name": "User-friendly query tool",
+    "description": "The system shall provide a user-friendly interface for designing queries against all record types, allowing staff to select fields, values from picklists, use regular expressions, and Boolean operators.",
+    "evidence": "We need a user-friendly interface for designing queries against all record types."
+  },
+  {
+    "raw_id": "R165",
+    "source": "email_report_features.eml",
+    "name": "Report templates creation",
+    "description": "Admins shall be able to create report templates that are available to staff, which can be run as-is or modified without compromising results.",
+    "evidence": "Admins need to create report templates that are available to staff."
+  },
+  {
+    "raw_id": "R166",
+    "source": "email_report_features.eml",
+    "name": "Limit alterations to report templates",
+    "description": "The system shall allow admins to limit which filters and display fields can be altered in report templates.",
+    "evidence": "Admins should be able to limit which filters and display fields can be altered."
+  },
+  {
+    "raw_id": "R167",
+    "source": "email_report_features.eml",
+    "name": "Cloning report templates",
+    "description": "The system shall allow users to clone existing report templates to create new variants.",
+    "evidence": "We also need the ability to 'clone' reports - take an existing template and create a new one based on it."
+  },
+  {
+    "raw_id": "R168",
+    "source": "email_report_features.eml",
+    "name": "Fine-grained report permissions",
+    "description": "The system shall implement distinct, fine-grained permission levels to limit who can create and clone reports.",
+    "evidence": "We need distinct, fine-grained permission levels limiting who can create and clone reports."
+  },
+  {
+    "raw_id": "R169",
+    "source": "email_report_features.eml",
+    "name": "Shared folders for reports",
+    "description": "Admins shall be able to create shared folders to control access to specific reports for staff.",
+    "evidence": "Admins can create shared folders to allow or disallow staff from running specific reports."
+  },
+  {
+    "raw_id": "R170",
+    "source": "email_report_features.eml",
+    "name": "Pre-defined board reports",
+    "description": "The system shall provide pre-defined reports for library boards that include basic statistics and activity reports.",
+    "evidence": "Pre-defined reports for library boards with basic statistics."
+  },
+  {
+    "raw_id": "R171",
+    "source": "email_report_features.eml",
+    "name": "Transaction archive compliance",
+    "description": "The system shall archive transactions while protecting patron privacy in compliance with State Law.",
+    "evidence": "Transactions archived protecting patron privacy per State Law."
+  },
+  {
+    "raw_id": "R172",
+    "source": "email_report_features.eml",
+    "name": "Display query selections with results",
+    "description": "The system shall provide query selections along with the results of the queries.",
+    "evidence": "System provides query selections along with results."
+  },
+  {
+    "raw_id": "R173",
+    "source": "email_report_features.eml",
+    "name": "Report queuing visibility",
+    "description": "The system shall allow users to see their report's position in the queue and its status (waiting, running, completed, failed).",
+    "evidence": "Ability to see where your report is in the queue."
+  },
+  {
+    "raw_id": "R174",
+    "source": "email_report_features.eml",
+    "name": "Report queue status details",
+    "description": "The system shall display details about the report queue, including how many reports are ahead and when the report was submitted.",
+    "evidence": "They need to see: That their report is in the queue, How many reports are ahead of theirs, When their report was submitted."
+  },
+  {
+    "raw_id": "R175",
+    "source": "email_report_features.eml",
+    "name": "Prioritize important reports",
+    "description": "The system shall allow certain reports to jump ahead in the queue based on priority.",
+    "evidence": "The ability to prioritize certain reports is crucial."
+  },
+  {
+    "raw_id": "R176",
+    "source": "email_staff_login.eml",
+    "name": "Streamlined staff login methods",
+    "description": "The system supports streamlined staff login methods, such as card swipe, but does not require them. Individual login and password must also be supported as a fallback.",
+    "evidence": "The system supports (but does not require) streamlined staff login methods, e.g. card swipe or individual login/password."
+  },
+  {
+    "raw_id": "R177",
+    "source": "email_staff_login.eml",
+    "name": "Individual authentication for audit",
+    "description": "The system must track which staff member is logged in for audit purposes, ensuring that individual authentication is maintained even with card swipe login.",
+    "evidence": "the system must track WHICH staff member is logged in for audit purposes."
+  },
+  {
+    "raw_id": "R178",
+    "source": "email_staff_login.eml",
+    "name": "Role-based access control",
+    "description": "User rights and privileges must be controlled through security groups and roles, allowing for access control for individuals, workgroups, and arbitrary staff groups.",
+    "evidence": "we need user rights and privileges to be controlled through security groups and/or 'roles.'"
+  },
+  {
+    "raw_id": "R179",
+    "source": "email_staff_login.eml",
+    "name": "Easy administration of roles",
+    "description": "The system should allow easy administration of roles and permissions, enabling simple changes to a staff member's permissions by modifying their role assignment.",
+    "evidence": "The system should make it easy to administer these roles - changing someone's permissions should be a simple matter of changing their role assignment."
+  },
+  {
+    "raw_id": "R180",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Custom report creation",
+    "description": "The system shall allow staff to create custom reports using a web-based interface with drag-and-drop field selection.",
+    "evidence": "Evergreen includes a report writer that allows staff to create custom reports using a web-based interface."
+  },
+  {
+    "raw_id": "R181",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Basic filtering and sorting",
+    "description": "The report writer shall support basic filtering and sorting of report data.",
+    "evidence": "Basic filtering and sorting."
+  },
+  {
+    "raw_id": "R182",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Multiple output formats",
+    "description": "The system shall support multiple output formats for reports, including CSV, HTML, and sometimes Excel.",
+    "evidence": "Multiple output formats (CSV, HTML, sometimes Excel)."
+  },
+  {
+    "raw_id": "R183",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Save and reuse report definitions",
+    "description": "The system shall allow users to save and reuse report definitions.",
+    "evidence": "Ability to save and reuse report definitions."
+  },
+  {
+    "raw_id": "R184",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Complex query construction",
+    "description": "The system shall provide an easier way to construct complex queries for reports.",
+    "evidence": "Complex queries are difficult to construct."
+  },
+  {
+    "raw_id": "R185",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Boolean operators support",
+    "description": "The report writer shall support Boolean operators (AND/OR) for filtering.",
+    "evidence": "No Boolean operators (AND/OR) beyond simple filters."
+  },
+  {
+    "raw_id": "R186",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Field selection expansion",
+    "description": "The system shall provide access to all database fields for report generation.",
+    "evidence": "Limited field selection (not all database fields are available)."
+  },
+  {
+    "raw_id": "R187",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Regular expression support",
+    "description": "The report writer shall support regular expressions for filtering.",
+    "evidence": "No regular expression support."
+  },
+  {
+    "raw_id": "R188",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Query queue visibility",
+    "description": "The system shall provide visibility into the query queue for reports.",
+    "evidence": "No query queue visibility."
+  },
+  {
+    "raw_id": "R189",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Hourly report scheduling",
+    "description": "The system shall allow reports to be scheduled to run hourly.",
+    "evidence": "No hourly scheduling."
+  },
+  {
+    "raw_id": "R190",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Simultaneous report execution",
+    "description": "The system shall allow multiple reports to be scheduled to run at the same time.",
+    "evidence": "No ability to check multiple reports to run at the same time."
+  },
+  {
+    "raw_id": "R191",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Email report delivery",
+    "description": "The system shall support email delivery of reports.",
+    "evidence": "No email delivery (reports can only be downloaded from the web interface)."
+  },
+  {
+    "raw_id": "R192",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Fine-grained permissions",
+    "description": "The system shall implement fine-grained control over who can create and run reports.",
+    "evidence": "No fine-grained control over who can create vs. run reports."
+  },
+  {
+    "raw_id": "R193",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Shared folders for reports",
+    "description": "The system shall provide a concept of shared folders for reports.",
+    "evidence": "No shared folders concept."
+  },
+  {
+    "raw_id": "R194",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Filter limitation control",
+    "description": "The system shall allow limiting which filters staff can use when generating reports.",
+    "evidence": "No ability to limit which filters staff can use."
+  },
+  {
+    "raw_id": "R195",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Circulation Count by Circ Modifier",
+    "description": "The system shall provide a report for circulation count by circulation modifier.",
+    "evidence": "Circulation Count by Circ Modifier (partially available)."
+  },
+  {
+    "raw_id": "R196",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Circulation Count by Dewey",
+    "description": "The system shall provide a report for circulation count by Dewey classification.",
+    "evidence": "Circulation Count by Dewey (not available)."
+  },
+  {
+    "raw_id": "R197",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Circulation Count by MARC fields",
+    "description": "The system shall provide a report for circulation count by MARC fields.",
+    "evidence": "Circulation Count by MARC fields (not available)."
+  },
+  {
+    "raw_id": "R198",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Circulation Count by Circ Location and Patron County",
+    "description": "The system shall provide a report for circulation count by circulation location broken down by patron county.",
+    "evidence": "Circulation Count by Circ Location broken down by Patron County (not available)."
+  },
+  {
+    "raw_id": "R199",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Circulation Count by Age Demographic",
+    "description": "The system shall provide a report for circulation count by age demographic.",
+    "evidence": "Circulation Count by Age Demographic (not available)."
+  },
+  {
+    "raw_id": "R200",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Items Edited Count",
+    "description": "The system shall provide a report for the count of items edited.",
+    "evidence": "Items Edited Count (not available)."
+  },
+  {
+    "raw_id": "R201",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Items Overdue with Patron Contact Info",
+    "description": "The system shall provide a report for items more than XX days overdue with patron contact information.",
+    "evidence": "Items more than XX days overdue with patron contact info (not available)."
+  },
+  {
+    "raw_id": "R202",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Last Copy Report",
+    "description": "The system shall provide a last copy report for items.",
+    "evidence": "Last Copy Report (partially available, needs enhancement)."
+  },
+  {
+    "raw_id": "R203",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Items by Creation Date Range",
+    "description": "The system shall provide a report for items by creation date range.",
+    "evidence": "List of Items by Creation Date Range (not available)."
+  },
+  {
+    "raw_id": "R204",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Claims Returned Report",
+    "description": "The system shall provide a claims returned report.",
+    "evidence": "Claims Returned report (not available)."
+  },
+  {
+    "raw_id": "R205",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Weeding Report with Last Circulation Date",
+    "description": "The system shall provide a weeding report with the date of last circulation.",
+    "evidence": "Weeding report with date of last circulation (partially available)."
+  },
+  {
+    "raw_id": "R206",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Age of Collection by Call Number",
+    "description": "The system shall provide a report for the age of the collection by call number.",
+    "evidence": "Age of collection by call number (not available)."
+  },
+  {
+    "raw_id": "R207",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Price Value of Collection by Call Number",
+    "description": "The system shall provide a report for the price value of the collection by call number.",
+    "evidence": "Price value of collection by call number (not available)."
+  },
+  {
+    "raw_id": "R208",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Bib Records Edited Count",
+    "description": "The system shall provide a report for the count of bib records edited.",
+    "evidence": "Bib Records Edited Count (not available)."
+  },
+  {
+    "raw_id": "R209",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Bib Records Added by User by Library Count",
+    "description": "The system shall provide a report for bib records added by user by library count.",
+    "evidence": "Bib Records Added by user by library Count (not available)."
+  },
+  {
+    "raw_id": "R210",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Bib Records Missing Specific MARC Fields",
+    "description": "The system shall provide a report for bib records missing specific MARC fields.",
+    "evidence": "Bib Records missing specific MARC fields (not available)."
+  },
+  {
+    "raw_id": "R211",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Patron Count by Age Demographic",
+    "description": "The system shall provide a report for patron count by age demographic.",
+    "evidence": "Patron Count by Age Demographic (not available)."
+  },
+  {
+    "raw_id": "R212",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Patron Count by County",
+    "description": "The system shall provide a report for patron count by county.",
+    "evidence": "Patron Count by County (not available)."
+  },
+  {
+    "raw_id": "R213",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Patron Count by County, City, & Zip Code",
+    "description": "The system shall provide a report for patron count by county, city, and zip code.",
+    "evidence": "Patron Count by County, City, & Zip Code (not available)."
+  },
+  {
+    "raw_id": "R214",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Voter Survey Responses Report",
+    "description": "The system shall provide a report for voter survey responses.",
+    "evidence": "Voter Survey Responses (not available)."
+  },
+  {
+    "raw_id": "R215",
+    "source": "evergreen_reference_2009.txt",
+    "name": "List of Patrons with Inactive Status",
+    "description": "The system shall provide a report for patrons with inactive status.",
+    "evidence": "List of Patrons with inactive status (not available)."
+  },
+  {
+    "raw_id": "R216",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Staff Accounts Last Password Change Date",
+    "description": "The system shall provide a report for staff accounts with the date of last password change.",
+    "evidence": "Staff Accounts with date of last password change (not available)."
+  },
+  {
+    "raw_id": "R217",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Holds Purchase Alert Report",
+    "description": "The system shall provide a holds purchase alert report.",
+    "evidence": "Holds Purchase Alert (not available)."
+  },
+  {
+    "raw_id": "R218",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Unfilled Holds Report",
+    "description": "The system shall provide a report for unfilled holds.",
+    "evidence": "Unfilled Holds (not available)."
+  },
+  {
+    "raw_id": "R219",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Stale Holds Report",
+    "description": "The system shall provide a report for stale holds.",
+    "evidence": "Stale Holds (not available)."
+  },
+  {
+    "raw_id": "R220",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Aged Debt Detailed Report",
+    "description": "The system shall provide a detailed report for aged debt.",
+    "evidence": "Aged Debt detailed report (partially available, needs enhancement)."
+  },
+  {
+    "raw_id": "R221",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Report Queue Visibility",
+    "description": "The system shall provide visibility into the report queue for staff.",
+    "evidence": "No report queue visibility (staff can't see where their report is in queue)."
+  },
+  {
+    "raw_id": "R222",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Report Prioritization",
+    "description": "The system shall allow prioritization of certain types of reports.",
+    "evidence": "No ability to prioritize certain types of reports."
+  },
+  {
+    "raw_id": "R223",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Cancel Running Reports",
+    "description": "The system shall allow users to cancel running reports.",
+    "evidence": "No ability to cancel a running report."
+  },
+  {
+    "raw_id": "R224",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Pivot Table Output",
+    "description": "The system shall support pivot table output for reports.",
+    "evidence": "No pivot table output."
+  },
+  {
+    "raw_id": "R225",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Real-time Reporting",
+    "description": "The system shall support real-time reporting of data.",
+    "evidence": "No real-time reporting (all reports are run on current data)."
+  },
+  {
+    "raw_id": "R226",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Historical Reporting Warehouse",
+    "description": "The system shall provide a historical reporting warehouse for data.",
+    "evidence": "No historical reporting warehouse."
+  },
+  {
+    "raw_id": "R227",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Flexible Scheduling Options",
+    "description": "The system shall allow users to select scheduling options for reports including ASAP, hourly, daily, weekly, monthly, and yearly.",
+    "evidence": "No ability to select Run ASAP, Hourly, Daily, Weekly, Monthly, Yearly."
+  },
+  {
+    "raw_id": "R228",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Address Book for Report Delivery",
+    "description": "The system shall provide an address book for report delivery.",
+    "evidence": "No address book for report delivery."
+  },
+  {
+    "raw_id": "R229",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Upload Text Files for Filtering",
+    "description": "The system shall allow users to upload text files for filtering reports.",
+    "evidence": "No ability to upload text files for filtering (barcodes, TCNs)."
+  },
+  {
+    "raw_id": "R230",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Selection Criteria Display in Report Results",
+    "description": "The system shall display selection criteria used in report results.",
+    "evidence": "No selection criteria display in report results."
+  },
+  {
+    "raw_id": "R231",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Edit Canned Report Display Options",
+    "description": "The system shall allow users to edit display options for canned reports.",
+    "evidence": "No ability to edit canned report display options."
+  },
+  {
+    "raw_id": "R232",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Quick Access Interface with Pop-up Descriptions",
+    "description": "The system shall provide a quick access interface with pop-up descriptions for reports.",
+    "evidence": "No quick access interface with pop-up descriptions."
+  },
+  {
+    "raw_id": "R233",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Hover Tooltips for Report Titles",
+    "description": "The system shall provide hover tooltips for report titles.",
+    "evidence": "No hover tooltips for report titles."
+  },
+  {
+    "raw_id": "R234",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Separate Reporting Database",
+    "description": "The system shall use a separate reporting database or replica for running reports.",
+    "evidence": "No separate reporting database/replica (reports run on production database)."
+  },
+  {
+    "raw_id": "R235",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Background Processing for Long-running Reports",
+    "description": "The system shall support background processing for long-running reports.",
+    "evidence": "No background processing for long-running reports."
+  },
+  {
+    "raw_id": "R236",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Report Template Management System",
+    "description": "The system shall provide a report template management system.",
+    "evidence": "No report template management system."
+  },
+  {
+    "raw_id": "R237",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Fine-grained Permissions for Reports",
+    "description": "The system shall implement fine-grained permissions for reports.",
+    "evidence": "No fine-grained permissions for reports."
+  },
+  {
+    "raw_id": "R238",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Development/Training Environment Separation",
+    "description": "The system shall separate development and training environments from production.",
+    "evidence": "No development/training environment separation."
+  },
+  {
+    "raw_id": "R239",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Configuration Migration Capability",
+    "description": "The system shall support configuration migration between environments.",
+    "evidence": "No configuration migration between environments."
+  },
+  {
+    "raw_id": "R240",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Accessibility Support for Report Interface",
+    "description": "The system shall provide accessibility support for the report interface.",
+    "evidence": "No accessibility support for report interface."
+  },
+  {
+    "raw_id": "R241",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Integrated Online Help System",
+    "description": "The system shall integrate an online help system with reports.",
+    "evidence": "No online help system integrated with reports."
+  },
+  {
+    "raw_id": "R242",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Expand Available Report Types",
+    "description": "The system shall expand the available report types to cover all identified gaps.",
+    "evidence": "Expand the available report types to cover all identified gaps."
+  },
+  {
+    "raw_id": "R243",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Implement Fine-grained Permissions and Template Management",
+    "description": "The system shall implement fine-grained permissions and template management for reports.",
+    "evidence": "Implement fine-grained permissions and template management."
+  },
+  {
+    "raw_id": "R244",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Add Report Queue Visibility and Status Indicators",
+    "description": "The system shall add report queue visibility and status indicators for users.",
+    "evidence": "Add report queue visibility and status indicators."
+  },
+  {
+    "raw_id": "R245",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Provide Multiple Output Formats and Scheduling Options",
+    "description": "The system shall provide multiple output formats and enhanced scheduling options for reports.",
+    "evidence": "Provide multiple output formats and scheduling options."
+  },
+  {
+    "raw_id": "R246",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Implement Accessibility Compliance",
+    "description": "The system shall implement accessibility compliance for the report interface.",
+    "evidence": "Implement accessibility compliance."
+  },
+  {
+    "raw_id": "R247",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Separate Reporting from Production Operations",
+    "description": "The system shall separate reporting operations from production operations.",
+    "evidence": "Separate reporting from production operations."
+  },
+  {
+    "raw_id": "R248",
+    "source": "evergreen_reference_2009.txt",
+    "name": "Provide Development/Training Environment with Migration Capability",
+    "description": "The system shall provide a development/training environment with migration capability.",
+    "evidence": "Provide a development/training environment with migration capability."
+  },
+  {
+    "raw_id": "R249",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Track uncataloged material",
+    "description": "The system shall allow tracking of uncataloged material as inventory, even if they do not have individual catalog records.",
+    "evidence": "We need to be able to track these as inventory even though they're not fully cataloged."
+  },
+  {
+    "raw_id": "R250",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Quick distribution of uncataloged material",
+    "description": "The system shall enable quick processing of uncataloged material shipments.",
+    "evidence": "we need to process these fast"
+  },
+  {
+    "raw_id": "R251",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Minimal branch labor for uncataloged material",
+    "description": "The system shall minimize the amount of time spent per item for processing uncataloged material.",
+    "evidence": "we can't spend a lot of time per item"
+  },
+  {
+    "raw_id": "R252",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Identify usage of uncataloged material",
+    "description": "The system shall allow identification of how uncataloged material is being used.",
+    "evidence": "ability to identify how the material is being used"
+  },
+  {
+    "raw_id": "R253",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Count transactions for uncataloged material",
+    "description": "The system shall count transactions related to uncataloged material and include them in circulation statistics and reports.",
+    "evidence": "we need to count transactions and include them in circulation statistics and reports."
+  },
+  {
+    "raw_id": "R254",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Item transfer utility",
+    "description": "The system shall provide an item transfer utility for moving batches of items between branches.",
+    "evidence": "the item transfer utility is crucial for us."
+  },
+  {
+    "raw_id": "R255",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Query candidate materials for transfer",
+    "description": "The system shall allow querying for candidate materials based on specific criteria, such as items that haven't circulated in 6 months.",
+    "evidence": "we need to query for candidate materials."
+  },
+  {
+    "raw_id": "R256",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Save queries for repeated use",
+    "description": "The system shall allow saving of queries for repeated use, such as monthly queries.",
+    "evidence": "we need to save these queries for repeated use."
+  },
+  {
+    "raw_id": "R257",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Manually select titles from query results",
+    "description": "The system shall allow manual selection of titles from query results for targeted transfers.",
+    "evidence": "we need to manually select titles from query results."
+  },
+  {
+    "raw_id": "R258",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Change records of selected items",
+    "description": "The system shall allow changing records of selected items to move them to a new location.",
+    "evidence": "we need to change records of selected items to move them to a new location."
+  },
+  {
+    "raw_id": "R259",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Revert items to original location",
+    "description": "The system shall provide mechanisms for reverting items back to their original location after a set period of time.",
+    "evidence": "there should be mechanisms for reverting items back to their original location."
+  },
+  {
+    "raw_id": "R260",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Report on missing and damaged items",
+    "description": "The system shall generate a report showing all missing and damaged items per branch.",
+    "evidence": "I need a report that shows all missing and damaged items per branch."
+  },
+  {
+    "raw_id": "R261",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Track collection health",
+    "description": "The system shall help track collection health and identify patterns of missing items.",
+    "evidence": "This helps me track collection health and identify patterns."
+  },
+  {
+    "raw_id": "R262",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "In-transit items report",
+    "description": "The system shall provide a report showing items that have been in-transit for more than a configurable number of days, per branch and per system.",
+    "evidence": "I also need the in-transit items report."
+  },
+  {
+    "raw_id": "R263",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Merge transit-to and transit-from reports",
+    "description": "The system shall merge transit-to and transit-from reports into one for ease of use.",
+    "evidence": "It should merge the transit-to and transit-from into one report for ease of use."
+  },
+  {
+    "raw_id": "R264",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Weeding reports",
+    "description": "The system shall generate weeding reports to identify items for purging based on customizable criteria.",
+    "evidence": "Weeding reports are my most-used report type."
+  },
+  {
+    "raw_id": "R265",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Criteria for purging items",
+    "description": "The system shall allow purging of items based on criteria such as status 'missing' for more than X months or status 'discard/weed'.",
+    "evidence": "identify items for purging based on customizable criteria."
+  },
+  {
+    "raw_id": "R266",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Batch change of item status",
+    "description": "The system shall allow batch changes of item status, such as changing 100 items from 'missing' to 'discard/weed'.",
+    "evidence": "Sometimes I need to change 100 items from 'missing' to 'discard/weed' in batch."
+  },
+  {
+    "raw_id": "R267",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Last copy report",
+    "description": "The system shall provide a last copy report to assist catalogers in avoiding deletion of last copies of items.",
+    "evidence": "The last copy report is CRITICAL."
+  },
+  {
+    "raw_id": "R268",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Quick method for deleting entries",
+    "description": "The system shall provide a quick and effective method for deleting volume entries and orphaned records.",
+    "evidence": "There also needs to be a quick, effective method for deleting volume entries."
+  },
+  {
+    "raw_id": "R269",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Track record deletions",
+    "description": "The system shall count and track record deletions per location and per system for auditing purposes.",
+    "evidence": "we need to count and track record deletions per location and per system."
+  },
+  {
+    "raw_id": "R270",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Shelf space report",
+    "description": "The system shall generate a shelf space report comparing percentage of total circulations, collection, and shelf space for each genre and format.",
+    "evidence": "The shelf space report is important for collection management."
+  },
+  {
+    "raw_id": "R271",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Material volume report",
+    "description": "The system shall provide a material volume report based on acquisitions, items on shelf, and items in circulation, broken down by categories.",
+    "evidence": "The material volume report helps me understand how much we have."
+  },
+  {
+    "raw_id": "R272",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Data quality reports",
+    "description": "The system shall generate data quality reports for items with invalid item types, long call numbers, and bibliographic records with no item records.",
+    "evidence": "Data quality reports - items with invalid item type, items with long call numbers."
+  },
+  {
+    "raw_id": "R273",
+    "source": "interview_cataloging_2009-05-08.txt",
+    "name": "Last edit date visibility",
+    "description": "The system shall display the last edit date on reports only when the item is edited, excluding last circulation dates.",
+    "evidence": "I need to be able to see the last edit date on reports."
+  },
+  {
+    "raw_id": "R274",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Server compatibility",
+    "description": "The reporting system must work on both Linux and Solaris environments.",
+    "evidence": "any reporting system needs to work on both Linux and Solaris."
+  },
+  {
+    "raw_id": "R275",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Background report processing",
+    "description": "Reports must be able to be queued and processed in the background to avoid disrupting other system functions during peak hours.",
+    "evidence": "we need to make sure reports can be queued and processed in the background."
+  },
+  {
+    "raw_id": "R276",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Read-only reporting replicas",
+    "description": "The system should support read-only reporting replicas to alleviate database load during report generation.",
+    "evidence": "Or we need read-only reporting replicas."
+  },
+  {
+    "raw_id": "R277",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Non-disruptive report processing",
+    "description": "Searches and reports must be processed during open hours without disrupting other system functions.",
+    "evidence": "the key requirement is that searches and reports can be processed during open hours without disrupting other system functions."
+  },
+  {
+    "raw_id": "R278",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Browser support",
+    "description": "The system must support Internet Explorer 6.0+ and Firefox 2.0+ due to the mixed browser environment in libraries.",
+    "evidence": "we need to support IE 6.0+ and Firefox 2.0+."
+  },
+  {
+    "raw_id": "R279",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Accessibility compliance",
+    "description": "The system must comply with Section 508 accessibility requirements, ensuring compatibility with assistive technologies.",
+    "evidence": "we MUST comply with Section 508 accessibility requirements."
+  },
+  {
+    "raw_id": "R280",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Structured HTML output",
+    "description": "The HTML output must be properly structured with alt tags, ARIA labels, and proper semantic HTML.",
+    "evidence": "The HTML output needs to be properly structured with alt tags, ARIA labels, and proper semantic HTML."
+  },
+  {
+    "raw_id": "R281",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Relational database architecture",
+    "description": "The reporting system must work with the relational structure of PostgreSQL and avoid denormalized reporting schemas.",
+    "evidence": "The reporting system needs to work with the relational structure, not fight against it."
+  },
+  {
+    "raw_id": "R282",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Role-based access control",
+    "description": "The system must implement a role-based access control system with different levels of access for users.",
+    "evidence": "The permission system needs to be controlled through security groups and/or 'roles.'"
+  },
+  {
+    "raw_id": "R283",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Ease of role administration",
+    "description": "Changing user permissions should be a simple matter of changing their role assignment.",
+    "evidence": "Changing someone's permissions should be a simple matter of changing their role assignment."
+  },
+  {
+    "raw_id": "R284",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Separate development and training environments",
+    "description": "Separate environments for development and training must be provided to avoid affecting production.",
+    "evidence": "We definitely need separate environments."
+  },
+  {
+    "raw_id": "R285",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Migratable configurations",
+    "description": "Configurations developed in training/development must be migratable to production, including report templates and permission settings.",
+    "evidence": "The key is that configurations developed in training/dev need to be migratable to production."
+  },
+  {
+    "raw_id": "R286",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Non-constraining OPAC module",
+    "description": "The management reporting system must not constrain the OPAC, ensuring fast access to the catalog.",
+    "evidence": "the management reporting system must not constrain the OPAC in any way."
+  },
+  {
+    "raw_id": "R287",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Online help system",
+    "description": "The help system must be online, hierarchical, and cross-linked, allowing staff to find information without IT assistance.",
+    "evidence": "the help system needs to be online, hierarchical, and cross-linked."
+  },
+  {
+    "raw_id": "R288",
+    "source": "interview_sysadmin_2009-05-10.txt",
+    "name": "Searchable help content",
+    "description": "The HTML help must be searchable and easy to navigate for staff.",
+    "evidence": "The HTML help needs to be searchable and easy to navigate."
+  },
+  {
+    "raw_id": "R289",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Document optimal Reports functionality",
+    "description": "The system shall document the optimal functionality for reports within a future Evergreen release.",
+    "evidence": "Document optimal Reports functionality within a future Evergreen release and develop a list of requirements."
+  },
+  {
+    "raw_id": "R290",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Compile list of required reports",
+    "description": "The system shall compile a list of reports needed for an Executive Reports Interface.",
+    "evidence": "Compile a list of reports needed for an Executive Reports Interface."
+  },
+  {
+    "raw_id": "R291",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Create templates for reports",
+    "description": "The system shall determine and create templates needed for all PINES libraries.",
+    "evidence": "Determine and create templates needed for all PINES libraries."
+  },
+  {
+    "raw_id": "R292",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Focus on Management Processes",
+    "description": "The system shall focus on reports and analysis tools used by library managers, administrators, and staff for planning, evaluation, and oversight purposes.",
+    "evidence": "the group would focus on Management Processes - that is, reports and analysis tools used by library managers, administrators, and staff for planning, evaluation, and oversight purposes."
+  },
+  {
+    "raw_id": "R293",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Analyze library collection usage",
+    "description": "The system shall analyze the library collection and its use by patrons.",
+    "evidence": "Analyzing the Library collection and its use by patrons."
+  },
+  {
+    "raw_id": "R294",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Analyze branch capacity",
+    "description": "The system shall analyze branch capacity and optimal distribution of the collection.",
+    "evidence": "Analyzing branch capacity and optimal distribution of the collection."
+  },
+  {
+    "raw_id": "R295",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Analyze patron demographics",
+    "description": "The system shall analyze demographics and interests of patrons.",
+    "evidence": "Analyzing demographics and interests of patrons."
+  },
+  {
+    "raw_id": "R296",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Analyze staff productivity",
+    "description": "The system shall analyze staff productivity and workflow.",
+    "evidence": "Analyzing staff productivity and workflow."
+  },
+  {
+    "raw_id": "R297",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Track financial transactions",
+    "description": "The system shall track and verify financial transactions.",
+    "evidence": "Tracking and verifying financial transactions."
+  },
+  {
+    "raw_id": "R298",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Specify functional requirements",
+    "description": "The system shall focus on specifying functional requirements rather than user interface specifications at this stage.",
+    "evidence": "the focus should be on functional requirements."
+  },
+  {
+    "raw_id": "R299",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Iterative prototype-oriented methodology",
+    "description": "The system shall use an iterative, prototype-oriented methodology for further specification of UI and data structures.",
+    "evidence": "UI and data structures would require further specification using an iterative, prototype-oriented methodology."
+  },
+  {
+    "raw_id": "R300",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "High readability for non-technical audience",
+    "description": "The system shall aim for a high level of readability for a non-technical audience while providing enough specificity for developers.",
+    "evidence": "aim for a high level of readability for a non-technical audience while providing enough specificity for developers."
+  },
+  {
+    "raw_id": "R301",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Collaborative development environment",
+    "description": "The system shall be developed in a highly collaborative and iterative environment where end-users can review prototypes.",
+    "evidence": "development would likely happen in a highly collaborative and iterative environment where end-users have multiple opportunities to review prototypes."
+  },
+  {
+    "raw_id": "R302",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Conduct interviews for report needs",
+    "description": "Each member shall conduct at least one interview with staff at their library system to gather report needs by April 15, 2009.",
+    "evidence": "Each member will conduct at least one interview with staff at their library system to gather report needs (due by April 15, 2009)."
+  },
+  {
+    "raw_id": "R303",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Circulate draft for reference",
+    "description": "Katherine shall circulate the King County / Galecia Group draft for reference.",
+    "evidence": "Katherine will circulate the King County / Galecia Group draft for reference."
+  },
+  {
+    "raw_id": "R304",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Schedule follow-up meeting",
+    "description": "A follow-up meeting shall be scheduled for July 20, 2009 to review findings.",
+    "evidence": "A follow-up meeting is scheduled for July 20, 2009 to review findings."
+  },
+  {
+    "raw_id": "R305",
+    "source": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "name": "Hold technical subcommittee meeting",
+    "description": "A technical subcommittee meeting shall be held in late June to discuss architectural constraints.",
+    "evidence": "A technical subcommittee meeting will be held in late June to discuss architectural constraints."
+  },
+  {
+    "raw_id": "R306",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Daily inventory and capacity reports",
+    "description": "The system shall provide daily inventory and capacity reports for library staff.",
+    "evidence": "Inventory and capacity reports are used daily."
+  },
+  {
+    "raw_id": "R307",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Cross-branch comparison reports",
+    "description": "The system shall generate reports that allow for cross-branch comparisons.",
+    "evidence": "Need for cross-branch comparison reports."
+  },
+  {
+    "raw_id": "R308",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Report queue visibility",
+    "description": "The system shall provide visibility into the report queue for users.",
+    "evidence": "Report queue visibility is important."
+  },
+  {
+    "raw_id": "R309",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Pre-defined board/executive reports",
+    "description": "The system shall allow for the creation of pre-defined reports for board and executive use.",
+    "evidence": "Board/executive reports need to be pre-defined."
+  },
+  {
+    "raw_id": "R310",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Data quality reports",
+    "description": "The system shall generate reports that assess data quality.",
+    "evidence": "Data quality reports are needed."
+  },
+  {
+    "raw_id": "R311",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Staff login via card swipe",
+    "description": "The system shall support staff login using a card swipe mechanism.",
+    "evidence": "Staff login needs (card swipe) - already discussed via email."
+  },
+  {
+    "raw_id": "R312",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "In-transit item reports",
+    "description": "The system shall provide reports on items that are in transit between branches.",
+    "evidence": "In-transit item reports are critical for delivery coordination."
+  },
+  {
+    "raw_id": "R313",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Missing/damaged item reports",
+    "description": "The system shall generate reports for missing or damaged items per branch.",
+    "evidence": "Missing/damaged item reports are needed per branch."
+  },
+  {
+    "raw_id": "R314",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Weeding reports",
+    "description": "The system shall provide reports for weeding library collections.",
+    "evidence": "Weeding reports are frequently used."
+  },
+  {
+    "raw_id": "R315",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Shelf space utilization reports",
+    "description": "The system shall generate reports on shelf space utilization.",
+    "evidence": "Shelf space utilization reports are important."
+  },
+  {
+    "raw_id": "R316",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Demographic analysis for program planning",
+    "description": "The system shall provide demographic analysis reports to assist in program planning.",
+    "evidence": "Demographic analysis for program planning."
+  },
+  {
+    "raw_id": "R317",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Support for large library consortium",
+    "description": "The system shall support management processes for a large library consortium with 286 locations and 17 million annual circulations.",
+    "evidence": "Management Processes must support the needs of a large, multiple-system library consortium."
+  },
+  {
+    "raw_id": "R318",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Background processing for reports",
+    "description": "The system shall allow for background processing of reports to prevent disruption during peak hours.",
+    "evidence": "We need background processing/queuing to prevent report generation from slowing down the circulation client."
+  },
+  {
+    "raw_id": "R319",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Operating on Linux or Solaris",
+    "description": "The system shall operate on a Linux or Solaris server.",
+    "evidence": "Management Processes shall operate on a Linux or Solaris server."
+  },
+  {
+    "raw_id": "R320",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Web-browser or Windows-compatible access",
+    "description": "The system shall be accessible through a web-browser or a Windows-compatible client.",
+    "evidence": "Management Processes shall be accessible through a web-browser or a Windows-compatible client."
+  },
+  {
+    "raw_id": "R321",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Browser compatibility",
+    "description": "The system shall be accessible through Microsoft Internet Explorer (v.6.0 and later) and Mozilla Firefox (v.2.0 and later).",
+    "evidence": "Management Processes shall be accessible through Microsoft Internet Explorer (v.6.0 and later) and Mozilla Firefox (v.2.0 and later)."
+  },
+  {
+    "raw_id": "R322",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Accessibility compliance",
+    "description": "The system shall be accessible with screen-reading and screen-magnification software, complying with Section 508.",
+    "evidence": "Management Processes shall be accessible with screen-reading software, screen-magnification software, and other software programs designed to increase accessibility."
+  },
+  {
+    "raw_id": "R323",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Relational database back-end",
+    "description": "The system shall use a fully relational database back-end for data management.",
+    "evidence": "Management Processes shall use a fully relational database back-end."
+  },
+  {
+    "raw_id": "R324",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Standards-compliant HTML output",
+    "description": "The system shall produce standards-compliant HTML for all web outputs.",
+    "evidence": "Management Processes shall produce standards-compliant HTML."
+  },
+  {
+    "raw_id": "R325",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Development and training environment",
+    "description": "The system shall provide a development and training environment with migration capabilities to production.",
+    "evidence": "Management Processes shall provide a development and training environment with the ability to migrate configurations to a production environment."
+  },
+  {
+    "raw_id": "R326",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Role-based access control",
+    "description": "The system shall implement user rights and privileges controlled through security groups and roles.",
+    "evidence": "User rights and privileges will be controlled through security groups and/or 'roles'."
+  },
+  {
+    "raw_id": "R327",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "No impact on OPAC functionality",
+    "description": "The requirements shall not constrain the functionality or features of the Online Public Access Catalog (OPAC) module.",
+    "evidence": "These requirements shall not constrain functionality or features of the Online Public Access Catalog (OPAC) module."
+  },
+  {
+    "raw_id": "R328",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Complete data specifications",
+    "description": "The software developer shall provide complete data specifications for various record types used by the system.",
+    "evidence": "The software developer shall provide complete data specifications for authority records, bibliographic records, order records, item records, hold/request records, and other records maintained or accessed by Management Processes."
+  },
+  {
+    "raw_id": "R329",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "High-level process descriptions",
+    "description": "The software developer shall provide a thorough high-level description of major processes within the system.",
+    "evidence": "The software developer shall provide a thorough high-level description of major processes, including bibliographic record import and export."
+  },
+  {
+    "raw_id": "R330",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Online help system",
+    "description": "The system shall provide an online, hierarchical, and cross-linked help system in HTML.",
+    "evidence": "The system shall provide an online, hierarchical, and cross-linked help system in HTML that describes and illustrates all system functions."
+  },
+  {
+    "raw_id": "R331",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Error reporting and feedback",
+    "description": "The system shall provide thorough high-level error reporting and allow for low-level query-specific feedback.",
+    "evidence": "The system shall provide thorough high-level error reporting and feedback and shall allow low-level query-specific feedback for Local and Global System Administrators."
+  },
+  {
+    "raw_id": "R332",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Enterprise-level Library Automation System",
+    "description": "Management Processes shall be part of an enterprise-level Library Automation System.",
+    "evidence": "Management Processes are part of an enterprise-level Library Automation System."
+  },
+  {
+    "raw_id": "R333",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Centralized management processes",
+    "description": "Management Processes shall be consolidated at a central location to provide services to multiple locations.",
+    "evidence": "Management Processes are consolidated at a central location, and accept input and provide services to multiple locations."
+  },
+  {
+    "raw_id": "R334",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Reliance on enterprise data structures",
+    "description": "Management Processes shall rely on the data structures and functionality of an enterprise-level Library Automation System.",
+    "evidence": "Management Processes rely on the data structures and functionality of an enterprise-level Library Automation System."
+  },
+  {
+    "raw_id": "R335",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Interface with vendor websites",
+    "description": "Management Processes shall interface with various vendor websites via published APIs or standard-format data files.",
+    "evidence": "Management Processes interface with a variety of vendor websites, via published APIs and/or automated transfer of standard-format data files."
+  },
+  {
+    "raw_id": "R336",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Interaction with OPAC",
+    "description": "Management Processes shall interact with a patron interface known as an Online Public Access Catalog (OPAC).",
+    "evidence": "Management Processes interact with a patron interface, also known as an Online Public Access Catalog (OPAC)."
+  },
+  {
+    "raw_id": "R337",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Compile reports for Executive Reports Interface",
+    "description": "The Reports Working Group shall compile a list of reports needed for an Executive Reports Interface.",
+    "evidence": "Compile a list of reports needed for an Executive Reports Interface."
+  },
+  {
+    "raw_id": "R338",
+    "source": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "name": "Create templates for PINES libraries",
+    "description": "The Reports Working Group shall determine and create templates needed for all PINES libraries.",
+    "evidence": "Determine and create templates needed for all PINES libraries."
+  },
+  {
+    "raw_id": "R339",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Relational Database Requirement",
+    "description": "The system must use a fully relational database back-end, specifically PostgreSQL, and must work with the relational structure.",
+    "evidence": "\"The reporting system must work WITH the relational structure, not against it.\""
+  },
+  {
+    "raw_id": "R340",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "HTML Compliance",
+    "description": "The system must produce standards-compliant HTML that validates against W3C standards for compatibility with different browsers and assistive technologies.",
+    "evidence": "\"We need to make sure all HTML output validates against W3C standards.\""
+  },
+  {
+    "raw_id": "R341",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Development and Training Environment",
+    "description": "The system must support separate development, training, and production environments, with a way to migrate configurations between them.",
+    "evidence": "\"What we need is a way to migrate configurations between them. Export/import of templates, permission settings, and saved queries.\""
+  },
+  {
+    "raw_id": "R342",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Safe Training Environment",
+    "description": "The training environment must be safe for staff to experiment without risking production data.",
+    "evidence": "\"And the training environment needs to be safe - staff should be able to experiment without risking production data.\""
+  },
+  {
+    "raw_id": "R343",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Role-Based Access Control",
+    "description": "The system must implement a role-based access control system that allows easy changes to user permissions through role assignments.",
+    "evidence": "\"The system should make it easy to change someone's permissions by simply changing their role assignment.\""
+  },
+  {
+    "raw_id": "R344",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "OPAC Performance Constraint",
+    "description": "The management reporting system must not constrain the OPAC, ensuring that report execution does not slow down the OPAC.",
+    "evidence": "\"We absolutely cannot constrain the OPAC.\""
+  },
+  {
+    "raw_id": "R345",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Complete Data Specifications",
+    "description": "The developer must provide complete data specifications for various record types including authority, bibliographic, order, item, and hold/request records.",
+    "evidence": "\"Staff need to understand the data structures to write effective queries. We need data dictionaries - field names, data types, relationships.\""
+  },
+  {
+    "raw_id": "R346",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "High-Level Process Descriptions",
+    "description": "The developer must provide thorough high-level descriptions of major processes including bibliographic record import/export and validation.",
+    "evidence": "\"The developer must provide a thorough high-level description of major processes.\""
+  },
+  {
+    "raw_id": "R347",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Online Help System",
+    "description": "The system shall provide an online, hierarchical, and cross-linked help system in HTML that is accessible.",
+    "evidence": "\"The help system needs to work with screen readers.\""
+  },
+  {
+    "raw_id": "R348",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Error Reporting",
+    "description": "The system shall provide thorough high-level error reporting and allow low-level query-specific feedback for administrators.",
+    "evidence": "\"When a report fails, we need to know WHY.\""
+  },
+  {
+    "raw_id": "R349",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Enterprise-Level System Integration",
+    "description": "Management Processes must be part of an enterprise-level Library Automation System, relying on its infrastructure.",
+    "evidence": "\"Management Processes are part of an enterprise-level Library Automation System.\""
+  },
+  {
+    "raw_id": "R350",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Centralized Management Processes",
+    "description": "Management Processes must be consolidated at a central location, providing services to multiple locations.",
+    "evidence": "\"Centralization is good for reporting.\""
+  },
+  {
+    "raw_id": "R351",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Library Automation Dependencies",
+    "description": "Management Processes must rely on the data structures and functionality of an enterprise-level Library Automation System, including Acquisitions and Cataloging modules.",
+    "evidence": "\"The reporting system doesn't manage acquisitions or cataloging - it just reads the data.\""
+  },
+  {
+    "raw_id": "R352",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Vendor Integration",
+    "description": "Management Processes must interface with various vendor websites via published APIs and/or automated transfer of standard-format data files.",
+    "evidence": "\"The reporting system needs to handle this data, but we can't rely on it being present at every library.\""
+  },
+  {
+    "raw_id": "R353",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "OPAC Integration",
+    "description": "Management Processes must interact with a patron interface (OPAC) for querying data without modifying it.",
+    "evidence": "\"The reporting system queries this data, but doesn't modify it.\""
+  },
+  {
+    "raw_id": "R354",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Required Output Formats",
+    "description": "The system must support output formats including Excel, HTML, and CSV for reporting.",
+    "evidence": "\"Excel, HTML, and CSV formats are required.\""
+  },
+  {
+    "raw_id": "R355",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Real-Time and Historical Reporting",
+    "description": "The system must support both real-time and historical reporting, potentially requiring a reporting warehouse for historical data.",
+    "evidence": "\"We probably need a reporting warehouse for historical data.\""
+  },
+  {
+    "raw_id": "R356",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Report Cancellation Capability",
+    "description": "The system must allow the cancellation of scheduled or running reports, checking for cancellation signals during processing.",
+    "evidence": "\"The ability to cancel a scheduled or running report is technically feasible.\""
+  },
+  {
+    "raw_id": "R357",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Null Handling Requirement",
+    "description": "The system must include all nulls and blank fields in the results of queries.",
+    "evidence": "\"All nulls and blank fields must be included in the results.\""
+  },
+  {
+    "raw_id": "R358",
+    "source": "meeting_tech_subcommittee_2009-06-30.txt",
+    "name": "Survey Filtering Capability",
+    "description": "The system must allow filtering by survey name rather than survey ID, resolving names to IDs internally.",
+    "evidence": "\"The ability to filter by survey name rather than survey ID requires the system to resolve names to IDs internally.\""
+  },
+  {
+    "raw_id": "R359",
+    "source": "survey_results_2009.txt",
+    "name": "Maintain transaction history",
+    "description": "The system shall maintain transaction history for a configurable number of days, with monthly and annual aggregates retained indefinitely.",
+    "evidence": "Transaction history maintained for X days (configurable), with monthly and annual aggregates retained indefinitely."
+  },
+  {
+    "raw_id": "R360",
+    "source": "survey_results_2009.txt",
+    "name": "Group transactions by various criteria",
+    "description": "The system shall allow transactions to be grouped by hour, terminal, branch, and system.",
+    "evidence": "Transactions can be grouped by hour, terminal, branch, and system."
+  },
+  {
+    "raw_id": "R361",
+    "source": "survey_results_2009.txt",
+    "name": "Count check-ins individually and cumulatively",
+    "description": "The system shall count all types of check-ins individually and cumulatively, including book-drop, terminal, by user, or self-service.",
+    "evidence": "All types of check-in counted individually and cumulatively: book-drop, terminal, by user or self-service."
+  },
+  {
+    "raw_id": "R362",
+    "source": "survey_results_2009.txt",
+    "name": "Count check-outs individually and cumulatively",
+    "description": "The system shall count all types of check-outs individually and cumulatively, including staff checkout, self checkout, staff renewal, self checkout renewal, online renewal, and OPAC renewal.",
+    "evidence": "All types of check-out counted individually and cumulatively: staff checkout, self checkout, staff renewal, self checkout renewal, online renewal, OPAC renewal."
+  },
+  {
+    "raw_id": "R363",
+    "source": "survey_results_2009.txt",
+    "name": "Count holds with placement method",
+    "description": "The system shall count holds and indicate the method of placement, whether at the staff desk, public computer, or remotely.",
+    "evidence": "Holds counted with method of placement: at staff desk, public computer, or remotely."
+  },
+  {
+    "raw_id": "R364",
+    "source": "survey_results_2009.txt",
+    "name": "Detailed transactions report",
+    "description": "The transactions report shall show holds placed, holds filled, and check-outs per patron, per library, per group of libraries, per system, and per county.",
+    "evidence": "Transactions report can show holds placed, holds filled, and check-outs per patron, per library, per group of libraries, per system, per county."
+  },
+  {
+    "raw_id": "R365",
+    "source": "survey_results_2009.txt",
+    "name": "Anonymized demographic statistics",
+    "description": "The system shall produce demographic statistics that include transactions by geographical regions and age ranges, ensuring that data is anonymized.",
+    "evidence": "Demographic statistics include transactions by geographical regions and age ranges. Data must be anonymized."
+  },
+  {
+    "raw_id": "R366",
+    "source": "survey_results_2009.txt",
+    "name": "Predict patron behavior",
+    "description": "The system shall produce statistics to understand and predict patron behavior and use of materials.",
+    "evidence": "System produces statistics to understand/predict patron behavior and use of materials."
+  },
+  {
+    "raw_id": "R367",
+    "source": "survey_results_2009.txt",
+    "name": "Create report templates",
+    "description": "The system shall allow administrators to create report templates that can be run as-is or modified.",
+    "evidence": "Report templates can be created by administrators and run as-is or modified."
+  },
+  {
+    "raw_id": "R368",
+    "source": "survey_results_2009.txt",
+    "name": "Implement fine-grained permissions",
+    "description": "The system shall implement fine-grained permissions to limit who can create and clone reports.",
+    "evidence": "Fine-grained permissions limit who can create and clone reports."
+  },
+  {
+    "raw_id": "R369",
+    "source": "survey_results_2009.txt",
+    "name": "Shared folders for report access",
+    "description": "The system shall provide shared folders to allow or disallow staff from running specific reports.",
+    "evidence": "Shared folders to allow/disallow staff from running specific reports."
+  },
+  {
+    "raw_id": "R370",
+    "source": "survey_results_2009.txt",
+    "name": "Report queue visibility",
+    "description": "The system shall provide the ability to see where a report is in the processing queue.",
+    "evidence": "Ability to see where your report is in the queue."
+  },
+  {
+    "raw_id": "R371",
+    "source": "survey_results_2009.txt",
+    "name": "Export to Excel without duplicates",
+    "description": "The system shall allow exporting to Excel while ensuring that the data does not contain duplicate rows.",
+    "evidence": "I need to export to Excel but the data has too many duplicate rows."
+  },
+  {
+    "raw_id": "R372",
+    "source": "survey_results_2009.txt",
+    "name": "Filter by all relevant fields",
+    "description": "The system shall allow filtering by all fields that should be available for reports.",
+    "evidence": "Can't filter by some fields that should be available."
+  },
+  {
+    "raw_id": "R373",
+    "source": "survey_results_2009.txt",
+    "name": "Pull specific MARC fields",
+    "description": "The system shall allow pulling specific MARC fields that may be spread across multiple rows.",
+    "evidence": "Need to pull specific MARC fields but they're spread across multiple rows."
+  },
+  {
+    "raw_id": "R374",
+    "source": "survey_results_2009.txt",
+    "name": "Historical reporting capability",
+    "description": "The system shall provide historical reporting to view data as it appeared on specific dates in the past, even if shelving locations have changed.",
+    "evidence": "Historical reporting - I want to see what the data looked like on a specific date in the past, even if the shelving location has changed."
+  },
+  {
+    "raw_id": "R375",
+    "source": "survey_results_2009.txt",
+    "name": "Pivot table output",
+    "description": "The system shall provide the capability to output reports in pivot table format.",
+    "evidence": "Pivot table output would be great."
+  },
+  {
+    "raw_id": "R376",
+    "source": "survey_results_2009.txt",
+    "name": "Real-time reporting",
+    "description": "The system shall provide real-time reporting capabilities for busy periods.",
+    "evidence": "Real-time reporting for busy periods."
+  },
+  {
+    "raw_id": "R377",
+    "source": "survey_results_2009.txt",
+    "name": "Cancel scheduled or running reports",
+    "description": "The system shall allow users to cancel a scheduled or currently running report.",
+    "evidence": "Ability to cancel a scheduled or running report."
+  },
+  {
+    "raw_id": "R378",
+    "source": "survey_results_2009.txt",
+    "name": "Include all nulls and blank fields",
+    "description": "The system shall ensure that all nulls and blank fields are included in report results.",
+    "evidence": "All nulls and blank fields must be included in results."
+  },
+  {
+    "raw_id": "R379",
+    "source": "survey_results_2009.txt",
+    "name": "Snapshot bills report",
+    "description": "The system shall provide a snapshot bills report that goes back in time.",
+    "evidence": "Need a snapshot bills report going back in time."
+  },
+  {
+    "raw_id": "R380",
+    "source": "survey_results_2009.txt",
+    "name": "Indicate last circulation date",
+    "description": "The system shall allow indicating the last circulation date on item reports.",
+    "evidence": "Ability to indicate last circulation date on item reports."
+  },
+  {
+    "raw_id": "R381",
+    "source": "survey_results_2009.txt",
+    "name": "Exclude renewals from check-in date/time",
+    "description": "The system shall ensure that check-in date/time does not include renewals.",
+    "evidence": "Checkin date/time should not include renewals."
+  }
+]

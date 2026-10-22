@@ -1,0 +1,7 @@
+{
+  "approved": false,
+  "issues": [
+    "R207 is reported as uncovered, although its capability is described in financial-reporting-and-ledger. Add R207 to that requirement’s raw-source list (or otherwise correct the traceability) so the coverage report reflects that the price-value-by-call-number requirement is covered.",
+    "Merge renewal-exclusion-in-checkin-timestamps into real-time-and-historical-reporting, or remove the repeated renewal-exclusion statement from the latter. Both requirements specify that renewals must not be counted as check-ins when calculating last-seen/check-in timestamps (R381; also covered in the real-time-and-historical-reporting text)."
+  ]
+}

@@ -1,0 +1,725 @@
+{
+  "requirements": [
+    {
+      "key": "reporting-platform-and-deployment",
+      "name": "Reporting platform, deployment, and accessibility",
+      "description": "The system shall operate as a browser-accessible reporting platform (and optionally support a Windows-compatible client) hosted on Linux or Solaris servers. The system shall produce standards-compliant HTML and shall support assistive technologies (screen readers, magnifiers, ARIA/alt-tag semantics) to meet accessibility requirements. The system shall provide separate development, training, and production environments with safe training data and the ability to migrate configurations, templates, and settings between environments. The system shall allow searches and reports to be run during open hours without disrupting other system functions so OPAC and patron-facing services remain performant.",
+      "category": "Infrastructure & Accessibility",
+      "source_raw_ids": [
+        "R090",
+        "R091",
+        "R092",
+        "R093",
+        "R095",
+        "R096",
+        "R251",
+        "R255",
+        "R256",
+        "R257",
+        "R261",
+        "R262",
+        "R296",
+        "R297",
+        "R298",
+        "R299",
+        "R300",
+        "R301",
+        "R318",
+        "R319",
+        "R320",
+        "R089"
+      ]
+    },
+    {
+      "key": "relational-database-and-reporting-architecture",
+      "name": "Relational database and reporting architecture",
+      "description": "The system shall use a fully relational database back-end (for example PostgreSQL) and shall be architected to avoid degrading production performance by supporting read-only reporting replicas or a separate reporting database. The architecture shall support background processing, queuing for long-running queries, scheduled execution, concurrent scheduled runs, and cancellation-checking for running jobs. These architecture choices are required to enable efficient reporting at enterprise scale while preserving transactional system responsiveness and OPAC responsiveness.",
+      "category": "Reporting Infrastructure",
+      "source_raw_ids": [
+        "R094",
+        "R212",
+        "R252",
+        "R253",
+        "R254",
+        "R258",
+        "R317",
+        "R334",
+        "R211",
+        "R192",
+        "R191"
+      ]
+    },
+    {
+      "key": "real-time-and-historical-reporting-warehouse",
+      "name": "Real-time and historical reporting (warehouse)",
+      "description": "The system shall provide both real-time querying of current data and historical reporting via a reporting warehouse or snapshot capability that captures the state of data on a given date or date range. The historical reporting capability shall be user-visible and support point-in-time comparisons, trend analysis, and scheduled archival snapshots without impacting production performance. This capability supports directors and analysts who need quarterly and other periodic reviews across branches and the consortium.",
+      "category": "Reporting Infrastructure",
+      "source_raw_ids": [
+        "R144",
+        "R202",
+        "R203",
+        "R211",
+        "R333"
+      ]
+    },
+    {
+      "key": "report-job-management-and-performance",
+      "name": "Report job management, scheduling and performance",
+      "description": "The system shall provide a job management facility for reports that displays queue position, submission time, and execution status, and shall allow flexible scheduling options (Run ASAP, Hourly, Daily, Weekly, Monthly, Yearly). The system shall support concurrent execution of multiple scheduled reports, allow cancellation of running or scheduled jobs, permit prioritized execution for designated high-priority reports, and allow editing of an already-recurring scheduled report (modify schedule or parameters). Long-running reports shall run as background jobs and the system shall provide administrators with controls and visibility to manage report load and performance.",
+      "category": "Job Scheduling & Execution",
+      "source_raw_ids": [
+        "R112",
+        "R172",
+        "R173",
+        "R190",
+        "R191",
+        "R192",
+        "R198",
+        "R199",
+        "R200",
+        "R204",
+        "R212",
+        "R221",
+        "R285",
+        "R295",
+        "R143"
+      ]
+    },
+    {
+      "key": "report-writer-ui-and-template-management",
+      "name": "Report writer UI and template management",
+      "description": "The system shall provide a user-friendly, web-based report writer that supports drag-and-drop field selection, advanced filtering (including Boolean operators, picklists, and regular expressions), and sorting with access to available database fields. Administrators shall be able to create, save, clone, edit, and share report templates and shall be able to control which filters and display fields staff may modify. The system shall provide shared folders, fine-grained permissions for report creation/cloning/running, quick-access interface features (hover/pop-up descriptions and tooltips for report titles), and allow editing display options for canned reports when permitted by template-level restrictions.",
+      "category": "Report Authoring & Security",
+      "source_raw_ids": [
+        "R163",
+        "R164",
+        "R165",
+        "R166",
+        "R167",
+        "R168",
+        "R169",
+        "R182",
+        "R183",
+        "R184",
+        "R185",
+        "R186",
+        "R187",
+        "R188",
+        "R189",
+        "R195",
+        "R196",
+        "R208",
+        "R213",
+        "R214",
+        "R220",
+        "R345",
+        "R346",
+        "R347",
+        "R209",
+        "R210",
+        "R182"
+      ]
+    },
+    {
+      "key": "report-output-and-delivery",
+      "name": "Report output formats and delivery",
+      "description": "The system shall provide multiple report output formats (including CSV, HTML, Excel, and pivot-table-compatible outputs) and shall support email delivery of reports with an address book for destinations. The system shall allow upload of text files for filtering and permit exports in formats suitable for external systems (for example CSV for outreach). Reports shall be able to include bibliographic/MARC fields in single-row outputs and shall present field-level metadata such as last-edit date distinct from last-circulation dates when requested in report definitions.",
+      "category": "Reporting Output & Integration",
+      "source_raw_ids": [
+        "R149",
+        "R184",
+        "R193",
+        "R201",
+        "R205",
+        "R206",
+        "R222",
+        "R332",
+        "R250"
+      ]
+    },
+    {
+      "key": "query-transparency-saved-queries-and-exports",
+      "name": "Query transparency, saved queries and exports",
+      "description": "The system shall display the query/selection criteria alongside the report results so staff can see and audit the filters used to generate a report, and shall allow saving and reusing query definitions (including uploading text files for filtering and saving monthly queries). The system shall support cloning of report definitions, resolving friendly names (for example survey names) into internal identifiers, and exporting results for downstream processes and outreach tools.",
+      "category": "Usability & Repeatability",
+      "source_raw_ids": [
+        "R030",
+        "R086",
+        "R147",
+        "R185",
+        "R205",
+        "R206",
+        "R233",
+        "R345",
+        "R336"
+      ]
+    },
+    {
+      "key": "null-and-optional-field-handling",
+      "name": "Null and optional field handling in queries",
+      "description": "The system shall include null and blank fields in query results by default and shall correctly handle optional fields that may be inconsistently populated across records. Reporting UIs shall provide options to include, exclude, or specially handle null/blank values in filters and groupings. This behavior shall apply across record types (patron, item, bibliographic, transaction) to ensure accurate counts and consistent reporting outputs.",
+      "category": "Data Handling",
+      "source_raw_ids": [
+        "R075",
+        "R076",
+        "R335"
+      ]
+    },
+    {
+      "key": "role-based-access-control-and-automatic-permission-recalculation",
+      "name": "Role-based access control and automatic permission updates",
+      "description": "The system shall implement role-based access control to manage user rights and privileges via security groups or roles and shall allow easy administration of roles so staff permissions can be changed by assigning different roles. The system shall automatically recalculate and apply report/template permissions when a user's role assignment changes to ensure access is kept in sync. The system shall support optional streamlined login methods (such as card-swipe) while always preserving individual authentication for audit purposes and providing traditional username/password fallback.",
+      "category": "Security & Authentication",
+      "source_raw_ids": [
+        "R097",
+        "R106",
+        "R174",
+        "R175",
+        "R176",
+        "R177",
+        "R178",
+        "R179",
+        "R180",
+        "R181",
+        "R259",
+        "R260",
+        "R303",
+        "R321"
+      ]
+    },
+    {
+      "key": "online-help-and-error-feedback",
+      "name": "Online help and error feedback",
+      "description": "The system shall provide an integrated, hierarchical, searchable, cross‑linked online help system in standards-compliant HTML that documents system functions and the report interface and is accessible to assistive technologies. The system shall also provide high-level error reporting and allow low-level, query-specific feedback accessible to local and global administrators from the front-end interface so staff can diagnose problems without IT intervention.",
+      "category": "Documentation & Support",
+      "source_raw_ids": [
+        "R101",
+        "R102",
+        "R218",
+        "R264",
+        "R265",
+        "R308",
+        "R325",
+        "R326"
+      ]
+    },
+    {
+      "key": "transactional-reporting-and-analytics",
+      "name": "Transactional reporting and patron analytics",
+      "description": "The system shall provide detailed transactional reporting and analytics for staff and administrators, including counts and groupings of holds placed/filled, check-ins, check-outs, renewals, and the method of hold placement. Reports shall support grouping and filtering by patron, home branch, selected groups of libraries, county, hour, terminal, workstation, and staff agent, and allow queries by date, workstation, and staff. The system shall produce statistics and analytic outputs intended to help understand and predict patron behavior and material use (predictive analytics) while relying on privacy and retention safeguards defined in the Privacy & Compliance requirement.",
+      "category": "Transactions & Analytics",
+      "source_raw_ids": [
+        "R115",
+        "R129",
+        "R130",
+        "R131",
+        "R132",
+        "R133",
+        "R150",
+        "R338",
+        "R339",
+        "R340",
+        "R341",
+        "R342",
+        "R344"
+      ]
+    },
+    {
+      "key": "patron-demographics-and-inactive-patron-reports",
+      "name": "Patron demographics and inactive patrons reporting",
+      "description": "The system shall provide reports on patrons grouped by configurable characteristics such as age ranges (derived from birth_date at query time), zip code, county of residence, home branch, patron type, and preferred language, supporting grouping and filtering with AND/OR logic. The system shall generate inactive-patron lists based on a configurable inactivity window (X days) considering circulation and electronic activity (OPAC login, online holds, online renewals), allow exclusions (do-not-disturb, staff, VIPs, opt-outs), include current mailing addresses for outreach where permitted, support export formats suitable for outreach (CSV), and provide demographic and interest-oriented outputs to support program planning and patron-interest analysis where such interest data exists.",
+      "category": "Patron Reporting",
+      "source_raw_ids": [
+        "R069",
+        "R070",
+        "R071",
+        "R072",
+        "R073",
+        "R074",
+        "R075",
+        "R076",
+        "R078",
+        "R079",
+        "R080",
+        "R081",
+        "R082",
+        "R083",
+        "R084",
+        "R085",
+        "R086",
+        "R087",
+        "R126",
+        "R127",
+        "R272",
+        "R293",
+        "R343"
+      ]
+    },
+    {
+      "key": "material-volume-and-shelf-space-reporting",
+      "name": "Material volume and shelf-space reporting",
+      "description": "The system shall provide material volume reports for any point in time showing counts of new acquisitions, items currently on the shelf (checked in), and items out in circulation, and shall allow historical point-in-time comparisons. The system shall provide shelf-space utilization reports showing percentage of total circulations, percentage of the collection, and an estimated percentage of shelf space (based on item dimensions or item-count proxies) occupied by genre and format; reports shall be available at branch and system levels and support side-by-side comparisons and date-range filtering for periodic reviews.",
+      "category": "Inventory & Collection Analysis",
+      "source_raw_ids": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R005",
+        "R006",
+        "R007",
+        "R008",
+        "R009",
+        "R019",
+        "R020",
+        "R021",
+        "R022",
+        "R023",
+        "R024",
+        "R025",
+        "R026",
+        "R027",
+        "R117",
+        "R119",
+        "R247",
+        "R248",
+        "R271",
+        "R283",
+        "R284",
+        "R292"
+      ]
+    },
+    {
+      "key": "branch-capacity-and-cross-branch-comparison",
+      "name": "Branch capacity and cross-branch comparison",
+      "description": "The system shall provide an interface that summarizes capacity metrics across all branches, including a high-level overview and drill-down into individual branch details. The interface shall support sorting and filtering (region, library type, current load), trend displays indicating growth or shrinkage, and grouping or filtering to manage large numbers of locations. The system shall support export of capacity data (for example CSV) and provide daily inventory and capacity reporting to aid operational decision-making for managers and directors.",
+      "category": "Capacity Planning",
+      "source_raw_ids": [
+        "R010",
+        "R011",
+        "R012",
+        "R013",
+        "R014",
+        "R015",
+        "R016",
+        "R017",
+        "R018",
+        "R118",
+        "R271",
+        "R283",
+        "R284"
+      ]
+    },
+    {
+      "key": "batch-item-transfer-utility",
+      "name": "Batch item transfer utility",
+      "description": "The system shall provide a utility for transferring batches of items between branches that supports querying for candidate materials, saving queries for repeated runs, manual selection from query results, and previewing changes before applying them. The utility shall update location fields of selected items, generate pull lists and printable transit labels, track transfer history, support efficient batch updates and provide undo/revert capabilities (time-based or event-based). Transfer operations shall be permission-controlled and shall notify users when transfers are delayed or have issues.",
+      "category": "Inventory Movement",
+      "source_raw_ids": [
+        "R028",
+        "R029",
+        "R030",
+        "R031",
+        "R032",
+        "R033",
+        "R034",
+        "R035",
+        "R036",
+        "R037",
+        "R038",
+        "R039",
+        "R040",
+        "R041",
+        "R042",
+        "R043",
+        "R044",
+        "R121",
+        "R231",
+        "R232",
+        "R233",
+        "R234",
+        "R235",
+        "R236"
+      ]
+    },
+    {
+      "key": "in-transit-missing-and-damaged-reporting",
+      "name": "In-transit, missing and damaged item reporting",
+      "description": "The system shall generate reports for items that have been in-transit beyond a configurable number of days (with a sensible default) and shall provide merged views that combine transit-to and transit-from for frontline convenience. The system shall generate missing and damaged item reports per branch that include item condition notes, allow sorting (for example by due date), and support alerts or flags for delayed transfers. These reports shall be configurable at branch and system levels to support operational follow-up.",
+      "category": "Inventory Exceptions & Alerts",
+      "source_raw_ids": [
+        "R045",
+        "R046",
+        "R047",
+        "R048",
+        "R049",
+        "R050",
+        "R122",
+        "R123",
+        "R237",
+        "R239",
+        "R240",
+        "R289",
+        "R290"
+      ]
+    },
+    {
+      "key": "data-lifecycle-weeding-purge-and-deletion-audit",
+      "name": "Data lifecycle, weeding, purge and deletion audit",
+      "description": "The system shall provide tools and reports to identify item records for weeding or purging based on customizable criteria (status, time in status, circulation history) including combining multiple criteria, running scheduled purges, and producing read-only candidate lists. The system shall include a last-copy report to prevent accidental deletion of the system's last copies, allow batch status changes and efficient deletion of orphaned records, require an explicit confirmation step for destructive deletions, and maintain an audit trail of purges and deletions. The system shall provide reporting interfaces that summarize deletions per location and system, aggregated by date range, user, and record type to support compliance and oversight; the reporting shall be report-only for deletion counts and audits and shall not itself perform destructive actions unless explicitly authorized through separate purge workflows.",
+      "category": "Data Lifecycle & Audit",
+      "source_raw_ids": [
+        "R052",
+        "R053",
+        "R054",
+        "R055",
+        "R056",
+        "R057",
+        "R058",
+        "R059",
+        "R060",
+        "R061",
+        "R062",
+        "R063",
+        "R064",
+        "R065",
+        "R066",
+        "R067",
+        "R068",
+        "R124",
+        "R148",
+        "R241",
+        "R242",
+        "R243",
+        "R244",
+        "R245",
+        "R246",
+        "R125"
+      ]
+    },
+    {
+      "key": "data-quality-and-weeding-analytics",
+      "name": "Data quality and weeding analytics",
+      "description": "The system shall generate data quality reports that identify problematic records such as invalid item types, excessively long call numbers, bibliographic records with no associated items, and other anomalies that affect collection integrity. The system shall expose metrics and weeding reports that help catalogers track collection health, prioritize remediation, and support scheduled weeding and purging workflows.",
+      "category": "Data Quality",
+      "source_raw_ids": [
+        "R219",
+        "R238",
+        "R249",
+        "R287",
+        "R291"
+      ]
+    },
+    {
+      "key": "uncataloged-material-inventory-and-reporting",
+      "name": "Uncataloged material inventory and reporting",
+      "description": "The system shall allow tracking of uncataloged material (for example paperback or children's board books) as inventory even when individual bibliographic items are not created, and shall support quick shipment processing and distribution workflows that minimize branch labor. The system shall count transactions for uncataloged material and include them in circulation statistics and reports so usage is measurable and supports efficient high-volume distribution.",
+      "category": "Collection Handling",
+      "source_raw_ids": [
+        "R120",
+        "R226",
+        "R227",
+        "R228",
+        "R229",
+        "R230"
+      ]
+    },
+    {
+      "key": "value-of-collection-and-financial-reporting",
+      "name": "Value of collection and financial reporting",
+      "description": "The system shall generate monetary-value reports for items (entire collection or subsets) using value data in item records and shall produce financial reports of patron account balances, fines, charges, waivers, and payments by patron, home library, and system. The system shall show payments by method, track fines waived by branch, allow querying for high-balance accounts, maintain a detailed ledger tying payments to charges for reconciliation, and enforce configurable data retention policies for financial records in compliance with accounting and audit requirements.",
+      "category": "Finance & Accounting",
+      "source_raw_ids": [
+        "R134",
+        "R135",
+        "R136",
+        "R137",
+        "R138",
+        "R151",
+        "R152",
+        "R153",
+        "R154",
+        "R155",
+        "R156",
+        "R157",
+        "R158",
+        "R159",
+        "R160",
+        "R161",
+        "R162"
+      ]
+    },
+    {
+      "key": "privacy-anonymization-and-data-retention",
+      "name": "Privacy, anonymization, and data retention",
+      "description": "The system shall archive transaction and reporting data in ways that protect patron privacy and comply with applicable laws while preserving useful anonymized demographic statistics. The system shall enforce configurable data retention policies for identifiable data (including support for retention durations required for audits where required), provide a documented policy for transaction-history retention and for retaining monthly/annual aggregates indefinitely, and apply anonymization and access controls so that identifiable transactional archives are accessed only as allowed. The Privacy & Compliance requirement shall be implemented separately from reporting features and shall be referenced by reporting components that produce analytics or exports.",
+      "category": "Privacy & Compliance",
+      "source_raw_ids": [
+        "R109",
+        "R116",
+        "R128",
+        "R160",
+        "R170",
+        "R337",
+        "R343"
+      ]
+    },
+    {
+      "key": "vendor-integration-and-interfaces",
+      "name": "Vendor integration and external interfaces",
+      "description": "The system shall integrate with vendor websites and external systems via published APIs or automated transfer of standard-format data files to support acquisitions, processing, and management tasks. The system shall join data from multiple sources (for example financial data from patron and item records) for consolidated reporting, shall interface with OPAC for read-only queries and presentation of reporting-linked data (without modifying OPAC records), and shall document integration points to support automated exchanges and minimal manual effort.",
+      "category": "Integration",
+      "source_raw_ids": [
+        "R161",
+        "R312",
+        "R329",
+        "R330",
+        "R331",
+        "R313"
+      ]
+    },
+    {
+      "key": "support-for-large-consortium-scale",
+      "name": "Support for large consortium scale and enterprise integration",
+      "description": "The system shall scale to support an enterprise-level library automation environment with hundreds of locations, high annual circulation and acquisitions volumes, and centralized management processes. The system shall rely on enterprise data structures (cataloging, acquisitions, holds) and shall not constrain OPAC performance. Centralized management and appropriate scaling are required to serve the consortium effectively and to provide consistent services across branches.",
+      "category": "Scalability & Enterprise",
+      "source_raw_ids": [
+        "R088",
+        "R294",
+        "R309",
+        "R310",
+        "R311",
+        "R327",
+        "R328",
+        "R329"
+      ]
+    },
+    {
+      "key": "reporting-templates-and-required-definitions",
+      "name": "Reporting templates, canned/on-demand/open-template types and traceable definitions",
+      "description": "The system shall support three reporting template types—canned (pre-defined/scheduled), on-demand (run-as-needed maintenance/collections reports), and open-template (full attribute selection across circulation, patrons, items, bills, and bibliographic records)—with administrators able to create and restrict templates and lock display/filters as required. The system shall explicitly support and implement the provided reporting definitions and fine-grained report specification as traceable artifacts, and shall ensure that changes to templates cannot silently compromise result accuracy.",
+      "category": "Reporting Features",
+      "source_raw_ids": [
+        "R104",
+        "R105",
+        "R106",
+        "R108",
+        "R113",
+        "R114",
+        "R139",
+        "R140",
+        "R141",
+        "R142",
+        "R169",
+        "R170",
+        "R219",
+        "R220"
+      ]
+    },
+    {
+      "key": "periodic-and-specialized-reports",
+      "name": "Periodic and specialized report types",
+      "description": "The system shall provide periodic and specialized reports such as bibliographic records with outstanding holds, items that have not circulated within a configurable number of days, and circulation counts by circulation modifier and by Dewey classification. These periodic reports shall be schedulable, exportable, and available as canned or on-demand templates and shall be discoverable in the report library for executive and operational use.",
+      "category": "Reporting Features",
+      "source_raw_ids": [
+        "R110",
+        "R197",
+        "R219"
+      ]
+    },
+    {
+      "key": "staff-productivity-and-workflow-reporting",
+      "name": "Staff productivity and workflow reporting",
+      "description": "The system shall provide reports and metrics that help analyze staff productivity and workflow, including measures such as transactions processed per staff member or terminal, throughput by task or workflow stage, and trend analysis for productivity. These reports shall be groupable by branch, hour, terminal, and staff role and shall support operational decision-making and staffing optimization.",
+      "category": "Operations & Productivity",
+      "source_raw_ids": [
+        "R273",
+        "R274"
+      ]
+    },
+    {
+      "key": "developer-data-specifications-and-process-descriptions",
+      "name": "Developer-provided data specifications and high-level process descriptions",
+      "description": "The developer shall provide complete data specifications for all relevant record types (authority, bibliographic, order, item, hold/request, etc.) and shall document high-level process descriptions for major flows such as bibliographic import/export, record validation, and reporting definitions. These artifacts shall be traceable to the provided reporting definitions and enable integration, validation, and testing of reports and data migrations.",
+      "category": "Developer Deliverables",
+      "source_raw_ids": [
+        "R099",
+        "R100",
+        "R305",
+        "R306",
+        "R323",
+        "R324"
+      ]
+    }
+  ],
+  "dropped": [
+    {
+      "raw_id": "R051",
+      "reason": "Project scheduling note (track technical feasibility confirmation by next week) — not a software requirement."
+    },
+    {
+      "raw_id": "R266",
+      "reason": "Meeting/working-group action item to document functionality — project task, not a system behavior requirement."
+    },
+    {
+      "raw_id": "R267",
+      "reason": "Meeting action to compile a list of required reports — project activity rather than a software capability."
+    },
+    {
+      "raw_id": "R275",
+      "reason": "Instruction about the scope of specification writing (specify only management-related requirements) — procedural, not a software requirement."
+    },
+    {
+      "raw_id": "R276",
+      "reason": "Development methodology guidance (iterative/prototype-oriented) — a process guideline, not a system capability."
+    },
+    {
+      "raw_id": "R277",
+      "reason": "Guidance about readability for non-technical audience — documentation/style guidance, not a system functional requirement."
+    },
+    {
+      "raw_id": "R278",
+      "reason": "Project governance/process guidance (collaborative development environment) — not a software requirement."
+    },
+    {
+      "raw_id": "R279",
+      "reason": "Assignment to working group members to conduct interviews — project task, not a software requirement."
+    },
+    {
+      "raw_id": "R280",
+      "reason": "Instruction to reference an external draft specification — project process note, not a system requirement."
+    },
+    {
+      "raw_id": "R281",
+      "reason": "Project scheduling (schedule follow-up meeting) — not a software requirement."
+    },
+    {
+      "raw_id": "R282",
+      "reason": "Meeting scheduling/organizational note about a technical subcommittee meeting — not a system requirement."
+    },
+    {
+      "raw_id": "R314",
+      "reason": "Working group task to document optimal Reports functionality — project deliverable, not a software requirement."
+    },
+    {
+      "raw_id": "R315",
+      "reason": "Working-group action to compile list of reports for executive interface — project task rather than a software capability."
+    },
+    {
+      "raw_id": "R316",
+      "reason": "Working-group instruction to determine/create templates for PINES libraries — organizational action, duplicate of template capabilities already captured."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "patron",
+      "definition": "A library patron (a person who borrows or uses library services).",
+      "replaces": [
+        "user",
+        "customer",
+        "borrower"
+      ]
+    },
+    {
+      "term": "staff",
+      "definition": "Library staff members who operate services and run reports (includes front-line staff, managers, and administrators where role is specified).",
+      "replaces": [
+        "employee",
+        "staff member",
+        "agent"
+      ]
+    },
+    {
+      "term": "administrator",
+      "definition": "A privileged staff role that creates and manages report templates, permissions, and system configurations.",
+      "replaces": [
+        "admin",
+        "manager",
+        "director"
+      ]
+    },
+    {
+      "term": "branch",
+      "definition": "An individual library location within the library consortium/system.",
+      "replaces": [
+        "library",
+        "location"
+      ]
+    },
+    {
+      "term": "library system",
+      "definition": "The entire consortium or administrative grouping of library branches served by the system.",
+      "replaces": [
+        "system",
+        "consortium"
+      ]
+    },
+    {
+      "term": "item",
+      "definition": "A physical or electronic unit of material tracked by the system (copy, volume, DVD, board book, etc.).",
+      "replaces": [
+        "volume",
+        "copy",
+        "material"
+      ]
+    },
+    {
+      "term": "bibliographic record",
+      "definition": "The catalog record describing a work (MARC or equivalent).",
+      "replaces": [
+        "bib",
+        "MARC record"
+      ]
+    },
+    {
+      "term": "OPAC",
+      "definition": "Online Public Access Catalog — the patron-facing catalog interface.",
+      "replaces": [
+        "patron interface",
+        "catalog"
+      ]
+    },
+    {
+      "term": "report template",
+      "definition": "A saved report definition that can be run as-is or cloned/modified according to permissions.",
+      "replaces": [
+        "canned report",
+        "template",
+        "pre-defined report"
+      ]
+    },
+    {
+      "term": "transaction",
+      "definition": "An event recorded by the system such as check-in, check-out, hold placement, renewal, fine payment, etc.",
+      "replaces": [
+        "activity",
+        "circulation event"
+      ]
+    },
+    {
+      "term": "in-transit",
+      "definition": "An item state indicating it is being transferred between branches and not currently available on shelf or checked out.",
+      "replaces": [
+        "transit-to",
+        "transit-from"
+      ]
+    },
+    {
+      "term": "purge",
+      "definition": "The deletion or removal of item/volume records based on retention or weeding criteria.",
+      "replaces": [
+        "delete",
+        "weed",
+        "discard"
+      ]
+    },
+    {
+      "term": "audit trail",
+      "definition": "A logged record of who performed actions (such as deletions or payments), when, and where for accountability and compliance.",
+      "replaces": [
+        "audit log",
+        "deletion log"
+      ]
+    }
+  ]
+}

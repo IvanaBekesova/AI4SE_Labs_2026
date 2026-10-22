@@ -1,0 +1,257 @@
+{
+  "attach": [
+    {
+      "raw_id": "R091",
+      "key": "technical-environment-and-compatibility"
+    },
+    {
+      "raw_id": "R096",
+      "key": "enterprise-integration-and-opac-interaction"
+    },
+    {
+      "raw_id": "R114",
+      "key": "patron-characteristics-and-demographics-reporting"
+    },
+    {
+      "raw_id": "R131",
+      "key": "transactions-history-and-aggregation"
+    },
+    {
+      "raw_id": "R149",
+      "key": "transactions-history-and-aggregation"
+    },
+    {
+      "raw_id": "R193",
+      "key": "report-templates-and-permissions"
+    },
+    {
+      "raw_id": "R205",
+      "key": "purging-and-weeding-utility"
+    },
+    {
+      "raw_id": "R231",
+      "key": "report-templates-and-permissions"
+    },
+    {
+      "raw_id": "R235",
+      "key": "non-disruptive-reporting-and-replicas"
+    },
+    {
+      "raw_id": "R240",
+      "key": "technical-environment-and-compatibility"
+    },
+    {
+      "raw_id": "R243",
+      "key": "report-templates-and-permissions"
+    },
+    {
+      "raw_id": "R246",
+      "key": "technical-environment-and-compatibility"
+    },
+    {
+      "raw_id": "R292",
+      "key": "report-templates-and-permissions"
+    },
+    {
+      "raw_id": "R293",
+      "key": "material-volume-reporting"
+    },
+    {
+      "raw_id": "R294",
+      "key": "branch-capacity-interface"
+    },
+    {
+      "raw_id": "R296",
+      "key": "transactions-history-and-aggregation"
+    },
+    {
+      "raw_id": "R297",
+      "key": "financial-reporting-and-ledger"
+    },
+    {
+      "raw_id": "R306",
+      "key": "branch-capacity-interface"
+    },
+    {
+      "raw_id": "R307",
+      "key": "branch-capacity-interface"
+    },
+    {
+      "raw_id": "R311",
+      "key": "role-based-access-and-authentication"
+    },
+    {
+      "raw_id": "R314",
+      "key": "purging-and-weeding-utility"
+    },
+    {
+      "raw_id": "R318",
+      "key": "non-disruptive-reporting-and-replicas"
+    },
+    {
+      "raw_id": "R327",
+      "key": "enterprise-integration-and-opac-interaction"
+    },
+    {
+      "raw_id": "R329",
+      "key": "data-specifications-and-process-documentation"
+    },
+    {
+      "raw_id": "R331",
+      "key": "online-help-and-error-reporting"
+    },
+    {
+      "raw_id": "R367",
+      "key": "report-templates-and-permissions"
+    },
+    {
+      "raw_id": "R368",
+      "key": "report-templates-and-permissions"
+    },
+    {
+      "raw_id": "R369",
+      "key": "report-templates-and-permissions"
+    },
+    {
+      "raw_id": "R372",
+      "key": "report-writer-features"
+    },
+    {
+      "raw_id": "R375",
+      "key": "report-output-formats-and-delivery"
+    },
+    {
+      "raw_id": "R091",
+      "key": "technical-environment-and-compatibility"
+    }
+  ],
+  "new_requirements": [
+    {
+      "key": "standard-operational-report-templates",
+      "name": "Standard operational report templates",
+      "description": "The system shall provide a set of built-in, standard operational report templates for common maintenance and management tasks (for example: bibliographic records with hold counts, items that have not been checked out for X days, overdue items with contact information, and claims-returned lists). Templates shall include the fields and joins required to produce those outputs (for example bib, item, hold, and patron contact fields and the ability to apply an inactivity threshold X) and shall be runnable as-is or clonable by administrators for local customization. Templates shall be documented and discoverable in the report template management system so staff can run these common operational reports without constructing complex queries from scratch.",
+      "category": "Reporting",
+      "source_raw_ids": [
+        "R108"
+      ]
+    },
+    {
+      "key": "patron-behavior-analytics",
+      "name": "Patron behavior analytics",
+      "description": "The system shall provide analytics capabilities that produce statistical summaries and trend indicators useful for understanding and predicting patron behavior and material use. This includes aggregated measures (for example circulation trends by patron cohorts, propensity-to-borrow scores, and time-series summaries) calculated from anonymized transaction and patron attribute data, and configurable groupings (for example by age brackets, geography, or home branch). Analytics outputs shall be available as scheduled or on-demand reports and suitable for export to downstream analysis tools while preserving patron privacy through anonymization or aggregation as required by policy.",
+      "category": "Analytics & Reporting",
+      "source_raw_ids": [
+        "R113"
+      ]
+    },
+    {
+      "key": "overdue-items-with-contact-report",
+      "name": "Overdue items with patron contact",
+      "description": "The system shall provide a predefined report that lists items overdue by a configurable threshold (for example more than XX days) together with current patron contact information (for example mailing address, phone, and email) necessary for outreach. The report shall allow filtering by branch, group of branches, item type, and date ranges, and shall be exportable (for example CSV) for integration with outreach and notification systems. Access to this report shall be controlled via report permissions to protect patron privacy.",
+      "category": "Operational Reporting",
+      "source_raw_ids": [
+        "R201"
+      ]
+    },
+    {
+      "key": "claims-returned-report",
+      "name": "Claims returned report",
+      "description": "The system shall provide a predefined claims-returned report that lists items marked as 'claims returned' including associated patron, circulation, and item metadata to support follow-up and inventory reconciliation. The report shall support filtering by date range, branch, and item attributes and shall include the date of the claim return, notice history, and any staff notes. The output shall be exportable and securable by permissions so that only authorized staff can access detailed patron-related information.",
+      "category": "Operational Reporting",
+      "source_raw_ids": [
+        "R204"
+      ]
+    },
+    {
+      "key": "collection-age-by-call-number",
+      "name": "Collection age by call number",
+      "description": "The system shall provide reports that compute the age profile of the collection broken down by call number ranges (for example Dewey or local call number groupings), reporting metrics such as average years since last circulation, count of items by age buckets, and last-circulation dates aggregated per call-number bin. These reports shall support filtering by branch or system, item type, and date ranges, and shall be useful for weeding and collection-development decisions. The underlying report definitions shall expose the call-number field and circulation history necessary to compute the age metrics.",
+      "category": "Collection Reporting",
+      "source_raw_ids": [
+        "R206"
+      ]
+    }
+  ],
+  "merges": [
+    {
+      "keep_key": "report-output-formats-and-delivery",
+      "remove_keys": [
+        "export-and-excel-quality"
+      ],
+      "new_description": "The system shall support multiple output formats for reports including CSV, HTML, Excel-compatible formats and pivot table output. Reports shall be deliverable via email and the system shall provide an address book for delivery destinations. Exports shall avoid duplicate rows where possible, preserve sensible field types, support pivot-table friendly layouts, and include selection criteria metadata (for example the report name and date range) with the export so downstream analysis is auditable."
+    },
+    {
+      "keep_key": "enterprise-integration-and-opac-interaction",
+      "remove_keys": [
+        "vendor-integration-apis"
+      ],
+      "new_description": "Management Processes and reporting shall be part of and rely on an enterprise-level Library Automation System and shall interface with vendor systems via published APIs or by automated transfer of standard-format data files. Integrations shall be secure, auditable, fault tolerant, and documented in the data specifications to enable automated exchanges for ordering, receiving, and processing material. The reporting and management processes must not constrain the OPAC; report execution shall not degrade OPAC performance and integrations shall support safe, read-only data access for reporting where appropriate."
+    },
+    {
+      "keep_key": "report-writer-features",
+      "remove_keys": [
+        "report-selection-criteria-display"
+      ],
+      "new_description": null
+    },
+    {
+      "keep_key": "item-transfer-batch-utility",
+      "remove_keys": [
+        "efficient-batch-update-safety"
+      ],
+      "new_description": "The system shall provide a utility to transfer batches of items between branches, supporting queries to find candidate materials, saving queries for repeated use, and manual selection from query results. The utility shall provide mechanisms to change item location fields, generate pull lists and printable transit labels, preview changes before execution, and provide undo/revert capabilities (including time- and event-based auto-revert rules). Transfer operations shall be permissioned by role, shall record transfer history, and shall be implemented to perform efficient batch updates without excessive database locking or disruption. Batch operations shall provide progress reporting, graceful failure handling, preview and confirmation steps, and be designed to allow safe bulk changes across large volumes of items."
+    },
+    {
+      "keep_key": "real-time-and-historical-reporting",
+      "remove_keys": [
+        "snapshot-bills-and-last-circulation"
+      ],
+      "new_description": "The system shall provide both real-time reporting for immediate operational needs and historical reporting that can reproduce views of data as of a given date or date range. Historical reporting shall be supported via a reporting warehouse, snapshot capability, or read-only replicas so that historical queries return consistent results even after data changes. The reporting capability shall include reproducible snapshots of bills and transaction aggregates, and shall support last-circulation reporting while ensuring renewals are excluded from check-in timestamps when computing last-seen values."
+    }
+  ],
+  "edits": [
+    {
+      "key": "transactions-history-and-aggregation",
+      "name": "Transactions history and aggregation",
+      "description": "The system shall maintain transaction history for a configurable retention period for raw transactions and shall retain monthly and annual aggregates indefinitely for reporting. The system shall allow grouping and filtering transactions by precise date/time ranges, workstation (terminal) identifier, staff member, hour, branch, and system, and shall produce backroom statistics useful for staffing and workflow analysis. Transaction reports shall be able to show transactions per patron, per library, per defined groups of libraries, and should support snapshotting (point-in-time views) of bills and transactions for historical audit and analysis."
+    },
+    {
+      "key": "item-transfer-batch-utility",
+      "name": "Item transfer (batch) utility",
+      "description": "The system shall provide a utility to transfer batches of items between branches, supporting queries to find candidate materials, saving queries for repeated use, and manual selection from query results. The utility shall provide mechanisms to change item location fields, generate pull lists and printable transit labels, preview changes before execution, and provide undo/revert capabilities (including time- and event-based auto-revert rules). Transfer operations shall be permissioned by role and shall record transfer history. Batch operations implemented by this utility shall be efficient on large volumes, avoid excessive database locking, provide progress reporting, allow cancellation, and handle failures gracefully to preserve data integrity."
+    },
+    {
+      "key": "purging-and-weeding-utility",
+      "name": "Item purging and weeding utility",
+      "description": "The system shall provide tools and reports to identify candidate item records for purging or weeding based on customizable criteria (for example status and duration), allow batch status conversions or deletions, and provide a last-copy report to prevent accidental removal of the system's only copy. Purge candidates shall be shown in read-only reports and actual deletions shall require a separate confirmation step; all purge operations shall be recorded in an audit trail. Batch deletion and status-change operations shall conform to the system's cross-cutting batch-operation safety behaviors (for example previews, confirmations, undo/revert options, permission checks, efficient execution, progress reporting, and graceful failure handling)."
+    },
+    {
+      "key": "report-writer-features",
+      "name": "Report writer and query interface",
+      "description": "The system shall provide a user-friendly, web-based query and report writer interface that allows staff to select fields (for example via drag-and-drop), pick values from picklists, use Boolean operators (AND/OR), and use regular expressions for advanced filtering. The interface shall expose the set of database fields required for reporting and shall support saving and reusing report definitions and queries. The system shall display the query selections alongside results so users can see the criteria used to generate each report and shall preserve those selection criteria when exporting report outputs."
+    },
+    {
+      "key": "financial-reporting-and-ledger",
+      "name": "Financial reporting and ledger",
+      "description": "The system shall produce financial reports including the value of items (by selection, collection portion, or entire collection), reports of fines and charges accrued per time period, waivers, payments by method, and payments collected by library. The system shall maintain an auditable ledger of patron payments showing which charges payments were applied to to facilitate reconciliation. Financial reporting shall support breakdowns by call-number ranges (for example price value of collection by call number) and shall be compatible with retention and audit requirements; outputs shall be exportable for accounting reconciliation and comply with applicable accounting and legal retention policies."
+    }
+  ],
+  "dropped": [
+    {
+      "raw_id": "R112",
+      "reason": "Referenced 'fine-grained reports' specification is not provided in the materials and therefore cannot be treated as a testable software requirement; scope/attachment must be supplied by stakeholders before inclusion."
+    },
+    {
+      "raw_id": "R290",
+      "reason": "Action item for project team (documenting optimal reports functionality) rather than a system capability requirement; this is a project/management task."
+    },
+    {
+      "raw_id": "R291",
+      "reason": "Task to compile a list of required reports for the Executive Reports Interface is a project/organization deliverable, not a software functional requirement."
+    },
+    {
+      "raw_id": "R298",
+      "reason": "Directive to focus on specifying functional requirements rather than UI is a process guidance for authors, not a software requirement to implement."
+    }
+  ]
+}

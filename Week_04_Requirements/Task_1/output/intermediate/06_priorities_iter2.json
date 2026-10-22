@@ -1,0 +1,166 @@
+{
+  "material-volume-reporting": {
+    "priority": "Must",
+    "rationale": "It is repeatedly specified and is a core collection-analysis capability requiring point-in-time and category breakdown reporting."
+  },
+  "shelf-space-utilization-report": {
+    "priority": "Must",
+    "rationale": "Specified across multiple sources and required for ongoing quarterly shelf/collection management decisions."
+  },
+  "branch-capacity-interface": {
+    "priority": "Must",
+    "rationale": "Multiple sources emphasize a consortium-wide capacity view with drilldown and export, making it essential for operational planning."
+  },
+  "item-transfer-batch-utility": {
+    "priority": "Must",
+    "rationale": "High-frequency, detailed requirements (preview, permissions, audit, efficient batch execution, revert, failure handling) indicate core operational necessity."
+  },
+  "in-transit-and-missing-damaged-reports": {
+    "priority": "Must",
+    "rationale": "Cross-source requirements define configurable, operationally essential exception reporting for missing/damaged and long in-transit items."
+  },
+  "purging-and-weeding-utility": {
+    "priority": "Must",
+    "rationale": "Safety controls (previews, confirmations, audit trail, last-copy protection) and batch purge behaviors are fundamental to allowed data changes."
+  },
+  "deletions-audit-and-reports": {
+    "priority": "Must",
+    "rationale": "Deletion logging, denial tracking, and compliance-oriented reporting are repeatedly referenced and are core audit requirements."
+  },
+  "patron-characteristics-and-demographics-reporting": {
+    "priority": "Must",
+    "rationale": "Strongly specified demographic reporting with flexible filters and explicit anonymization/privacy protections is central and highly sourced."
+  },
+  "inactive-patrons-report": {
+    "priority": "Should",
+    "rationale": "Clearly defined and well-sourced, but it can be partially worked around with more general reporting in an initial release."
+  },
+  "uncataloged-material-inventory": {
+    "priority": "Should",
+    "rationale": "Important for specific collection types and circulation statistics, but only referenced in two sources, suggesting lower criticality than core reporting."
+  },
+  "transactions-history-and-aggregation": {
+    "priority": "Must",
+    "rationale": "Core retention and aggregation requirements underpin many operational and analytical reporting needs."
+  },
+  "detailed-transaction-counts": {
+    "priority": "Must",
+    "rationale": "Multiple sources require detailed check-in/out, holds, renewals by method, and breakdowns needed for collection and operations analysis."
+  },
+  "predefined-and-board-reports": {
+    "priority": "Should",
+    "rationale": "Commonly needed governance reporting is specified multiple times, but it can be staged after core report-writing/scheduling is in place."
+  },
+  "report-writer-features": {
+    "priority": "Must",
+    "rationale": "A key capability enabling customizable queries via a web interface with saving/reuse and selection preservation is foundational."
+  },
+  "report-templates-and-permissions": {
+    "priority": "Must",
+    "rationale": "Template management with cloning and fine-grained permissions is required to safely support consistent and authorized report usage."
+  },
+  "report-scheduling-queue-and-priority": {
+    "priority": "Must",
+    "rationale": "Queueing, background execution, status visibility, cancellation, and admin prioritization are operational requirements for long-running reports."
+  },
+  "report-output-formats-and-delivery": {
+    "priority": "Must",
+    "rationale": "Multiple delivery/export formats with auditable metadata are necessary for downstream use and accessibility of reporting outputs."
+  },
+  "real-time-and-historical-reporting": {
+    "priority": "Must",
+    "rationale": "Reproducible point-in-time views via warehouse/snapshots/replicas are essential for auditability and trend analysis."
+  },
+  "marc-and-field-level-reporting": {
+    "priority": "Must",
+    "rationale": "Field-level MARC and row-collapsing requirements are explicitly needed for cataloging/collection-development and are core to report usefulness."
+  },
+  "data-quality-reports": {
+    "priority": "Should",
+    "rationale": "Important for ongoing integrity and QA, but can be delivered after the core reporting and audit/compliance features."
+  },
+  "financial-reporting-and-ledger": {
+    "priority": "Must",
+    "rationale": "Financial reports and an auditable ledger with application tracing are essential for compliance and reconciliation."
+  },
+  "audit-and-compliance": {
+    "priority": "Must",
+    "rationale": "Legal/privacy retention and audit-trail protections are stated as core system constraints that reporting must satisfy."
+  },
+  "technical-environment-and-compatibility": {
+    "priority": "Must",
+    "rationale": "Platform/DB/browser/HTML accessibility and integrity constraints are cross-cutting and necessary for the system to be deployable and safe."
+  },
+  "non-disruptive-reporting-and-replicas": {
+    "priority": "Should",
+    "rationale": "Non-disruptive background processing and optional replicas are important for operations, but a minimal approach could work initially with fewer replicas."
+  },
+  "development-and-training-environments": {
+    "priority": "Should",
+    "rationale": "Staging/migration tooling is important for rollout safety but can be partially satisfied depending on delivery timeline."
+  },
+  "role-based-access-and-authentication": {
+    "priority": "Must",
+    "rationale": "Security group/role-based access with authenticated audit logging is required to control all sensitive reporting and actions."
+  },
+  "online-help-and-error-reporting": {
+    "priority": "Should",
+    "rationale": "User support and diagnostics are widely requested but not strictly required for baseline correctness of reporting."
+  },
+  "data-specifications-and-process-documentation": {
+    "priority": "Must",
+    "rationale": "Complete data specifications and definitions are necessary for interoperable reporting, migration, and interpretability/auditability."
+  },
+  "enterprise-integration-and-opac-interference": {
+    "priority": "Must",
+    "rationale": "Defines required secure integrations and explicit non-interference with OPAC performance, making it a core technical constraint."
+  },
+  "ui-quick-access-and-tooltips": {
+    "priority": "Could",
+    "rationale": "Usability improvements are helpful but less critical than core reporting/security/compliance functionality."
+  },
+  "null-and-blank-field-handling": {
+    "priority": "Should",
+    "rationale": "Correct null/blank handling is important for trustworthy reports but can be partially mitigated with documented conventions early."
+  },
+  "survey-name-filtering": {
+    "priority": "Could",
+    "rationale": "Improves usability for query authors, but functionality can proceed using internal IDs if needed."
+  },
+  "renewal-exclusion-in-checkin-timestamps": {
+    "priority": "Must",
+    "rationale": "Ensuring check-in timestamps exclude renewals is critical to prevent incorrect recency and last-seen calculations."
+  },
+  "last-edit-date-visibility": {
+    "priority": "Could",
+    "rationale": "Useful for metadata recency decisions, but less critical than core circulation-based reporting correctness."
+  },
+  "support-large-consortium-scale": {
+    "priority": "Must",
+    "rationale": "Scalability expectations and high-volume operational needs are core to system viability for the intended deployment."
+  },
+  "standard-operational-report-templates": {
+    "priority": "Could",
+    "rationale": "Built-in templates are valuable but can be added after the report writer/permissions/scheduling foundation is established."
+  },
+  "patron-behavior-analytics": {
+    "priority": "Could",
+    "rationale": "Adds advanced analytics beyond core reporting and is only specified in one source, suggesting lower priority."
+  },
+  "overdue-items-with-contact-report": {
+    "priority": "Could",
+    "rationale": "Predefined outreach-focused reporting is useful, but it is only specified in one source and could be covered by general overdue reporting."
+  },
+  "claims-returned-report": {
+    "priority": "Could",
+    "rationale": "Specific predefined report with sensitive patron details is helpful but low frequency of citation suggests later delivery."
+  },
+  "collection-age-by-call-number": {
+    "priority": "Could",
+    "rationale": "Targeted collection-development reporting is specified once and can likely be produced via flexible report writer later."
+  },
+  "enterprise-integration-and-opac-interaction": {
+    "priority": "Should",
+    "rationale": "Default priority (not assigned by the model)."
+  }
+}

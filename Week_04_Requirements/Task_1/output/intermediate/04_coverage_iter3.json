@@ -1,0 +1,29 @@
+{
+  "raw_total": 381,
+  "covered": 369,
+  "dropped_as_noise": 12,
+  "uncovered": [],
+  "raw_ids_in_multiple_requirements": [
+    "R015",
+    "R056",
+    "R074",
+    "R109",
+    "R154",
+    "R163",
+    "R191",
+    "R197",
+    "R220",
+    "R221",
+    "R230",
+    "R232",
+    "R245",
+    "R332",
+    "R346",
+    "R361",
+    "R362",
+    "R374",
+    "R379"
+  ],
+  "requirements_without_valid_source": [],
+  "hallucinated_raw_ids_removed": []
+}

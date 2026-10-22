@@ -1,0 +1,20 @@
+{
+  "attach": [
+    {
+      "raw_id": "R207",
+      "key": "financial-reporting-and-ledger"
+    }
+  ],
+  "new_requirements": [],
+  "merges": [
+    {
+      "keep_key": "real-time-and-historical-reporting",
+      "remove_keys": [
+        "renewal-exclusion-in-checkin-timestamps"
+      ],
+      "new_description": null
+    }
+  ],
+  "edits": [],
+  "dropped": []
+}

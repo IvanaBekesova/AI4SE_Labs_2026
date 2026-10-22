@@ -1,0 +1,166 @@
+{
+  "material-volume-reporting": {
+    "priority": "Must",
+    "rationale": "Frequently specified core reporting capability needed for collection analysis, planning, and point-in-time comparisons."
+  },
+  "shelf-space-utilization-report": {
+    "priority": "Must",
+    "rationale": "Explicitly required for operational/leadership periodic reviews and depends on multiple detailed report behaviors."
+  },
+  "branch-capacity-interface": {
+    "priority": "Must",
+    "rationale": "Consortium-wide capacity/utilization visibility with drilldown and export is core for managing collections and operations."
+  },
+  "item-transfer-batch-utility": {
+    "priority": "Must",
+    "rationale": "Batch transfer with preview/labels/undo, history, and role permissions is essential operational functionality."
+  },
+  "in-transit-and-missing-damaged-reports": {
+    "priority": "Must",
+    "rationale": "Time-thresholded, unified operational lists directly support frontline handling of missing/damaged/in-transit items."
+  },
+  "purging-and-weeding-utility": {
+    "priority": "Must",
+    "rationale": "Weeding/purging with safety (last-copy) and audit trail is a critical risk-control workflow."
+  },
+  "deletions-audit-and-reports": {
+    "priority": "Must",
+    "rationale": "Audit logging and compliance-grade reporting for deletions is required for governance and traceability."
+  },
+  "patron-characteristics-and-demographics-reporting": {
+    "priority": "Must",
+    "rationale": "High stakeholder emphasis (most sources) and includes privacy-protecting anonymized aggregates for planning."
+  },
+  "inactive-patrons-report": {
+    "priority": "Should",
+    "rationale": "Operationally important targeting/outreach workflow with exports and exclusions, but may be phased behind core reporting/audit capabilities."
+  },
+  "uncataloged-material-inventory": {
+    "priority": "Should",
+    "rationale": "Important inventory/reporting for uncataloged materials, though less universally referenced than core reporting and auditing requirements."
+  },
+  "transactions-history-and-aggregation": {
+    "priority": "Should",
+    "rationale": "Key for analytics with retention and aggregates, but other circulation/counting/reporting features may mitigate early gaps."
+  },
+  "detailed-transaction-counts": {
+    "priority": "Must",
+    "rationale": "Granular circulation/hold counting is foundational to many other collection and operational reports."
+  },
+  "predefined-and-board-reports": {
+    "priority": "Should",
+    "rationale": "Expected executive operational capability that can be added with templates/recurrences after the underlying reporting framework exists."
+  },
+  "report-writer-features": {
+    "priority": "Must",
+    "rationale": "Interactive report/query building (fields, Boolean/regex, saving) is essential to make the reporting suite usable."
+  },
+  "report-templates-and-permissions": {
+    "priority": "Must",
+    "rationale": "Template management and fine-grained permissions are necessary to safely deploy reports across roles and groups."
+  },
+  "report-scheduling-queue-and-priority": {
+    "priority": "Must",
+    "rationale": "Background queued execution with queue visibility/cancellation and admin prioritization is required for reliable use at scale."
+  },
+  "report-output-formats-and-delivery": {
+    "priority": "Must",
+    "rationale": "Multiple delivery formats and email distribution are required for practical consumption and downstream workflows."
+  },
+  "real-time-and-historical-reporting": {
+    "priority": "Must",
+    "rationale": "Historical point-in-time reproducibility plus real-time ops reporting is explicitly required and supports many audit/report use cases."
+  },
+  "marc-and-field-level-reporting": {
+    "priority": "Must",
+    "rationale": "Field/MARC-level pulling and bibliographic handling are core to collection-development and weeding/analysis reports."
+  },
+  "data-quality-reports": {
+    "priority": "Should",
+    "rationale": "Important for catalog integrity and migration/QA, but may be deliverable after core reporting and audit functions."
+  },
+  "financial-reporting-and-ledger": {
+    "priority": "Must",
+    "rationale": "Auditable financial reporting and ledger application of payments is core accounting/compliance functionality."
+  },
+  "audit-and-compliance": {
+    "priority": "Must",
+    "rationale": "Legal/accounting/privacy constraints and configurable retention requirements are fundamental and explicitly mandated."
+  },
+  "technical-environment-and-compatibility": {
+    "priority": "Must",
+    "rationale": "Platform/browser/database constraints are essential constraints for deployment and correct operation."
+  },
+  "non-disruptive-reporting-and-replicas": {
+    "priority": "Should",
+    "rationale": "Queuing/background processing is required; replica-based offload is important but can be a phased enhancement."
+  },
+  "development-and-training-environments": {
+    "priority": "Should",
+    "rationale": "Separating environments and migration tooling is important for rollout safety but not as core as runtime reporting/audit."
+  },
+  "role-based-access-and-authentication": {
+    "priority": "Must",
+    "rationale": "RBAC, authentication, and audit-relevant logging are essential security requirements."
+  },
+  "online-help-and-error-reporting": {
+    "priority": "Could",
+    "rationale": "Documentation and diagnostics improve usability, but core system value can exist without it in the first release."
+  },
+  "data-specifications-and-process-documentation": {
+    "priority": "Should",
+    "rationale": "Required for interpretability and integration/report authoring, but some parts can be delivered as supporting artifacts later."
+  },
+  "enterprise-integration-and-opac-interaction": {
+    "priority": "Must",
+    "rationale": "Interfaces with enterprise systems and non-interference with OPAC performance are explicit operational constraints."
+  },
+  "ui-quick-access-and-tooltips": {
+    "priority": "Could",
+    "rationale": "Improves discoverability and training burden, but can be deferred behind core reporting functionality."
+  },
+  "null-and-blank-field-handling": {
+    "priority": "Must",
+    "rationale": "Correct null/blank inclusion and documented filter behavior is explicitly required for report correctness and interpretability."
+  },
+  "survey-name-filtering": {
+    "priority": "Could",
+    "rationale": "Usability enhancement for survey-derived fields; beneficial but not strictly necessary for core reporting delivery."
+  },
+  "export-and-excel-quality": {
+    "priority": "Should",
+    "rationale": "Export compatibility and duplicate-row avoidance are important; can be staged after core reporting outputs exist."
+  },
+  "snapshot-bills-and-last-circulation-reporting": {
+    "priority": "Should",
+    "rationale": "Snapshot/last-circulation support is valuable for auditing/weeding but less broadly referenced than core reporting primitives."
+  },
+  "renewal-exclusion-in-checkin-timestamps": {
+    "priority": "Must",
+    "rationale": "Prevents metric corruption (recency inflation) and is explicitly stated as a correctness requirement."
+  },
+  "last-edit-date-visibility": {
+    "priority": "Could",
+    "rationale": "Helpful metadata correctness for staff workflows, but may be omitted early while other recency indicators exist."
+  },
+  "efficient-batch-update-safety": {
+    "priority": "Must",
+    "rationale": "Batch update preview/undo/permissioning and efficient locking behavior are required for safe large-volume operations."
+  },
+  "vendor-integration-apis": {
+    "priority": "Should",
+    "rationale": "Important for acquisitions/processing automation and security, but some integration can be implemented incrementally."
+  },
+  "support-large-consortium-scale": {
+    "priority": "Must",
+    "rationale": "Explicit scalability requirements (large consortia, high-volume reporting/batches) constrain system design for acceptance."
+  },
+  "report-selection-criteria-display": {
+    "priority": "Must",
+    "rationale": "Displaying preserved selection criteria with results is explicitly required for auditability and reproducibility."
+  },
+  "snapshot-bills-and-last-circulation": {
+    "priority": "Should",
+    "rationale": "Default priority (not assigned by the model)."
+  }
+}

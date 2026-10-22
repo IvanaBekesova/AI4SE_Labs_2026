@@ -1,0 +1,14 @@
+{
+  "approved": false,
+  "issues": [
+    "Add or explicitly support the periodic report examples in R108—bibliographic records with holds and items not checked out for X days. The general report-writer and canned-report requirements do not ensure these reports can be produced with the necessary fields and criteria.",
+    "Address the analytics requirement in R113: the set does not explicitly require statistics for understanding or predicting patron behavior and material use. Either add this capability or clarify which existing reports satisfy it.",
+    "Add transaction filtering and reporting by date/time, workstation, and staff member from R149. `transactions-history-and-aggregation` covers hour and terminal grouping, but not staff or the requested date/time criteria.",
+    "Add or explicitly include the named operational reports missing from the set: overdue items with patron contact information (R201) and claims-returned items (R204). Generic query/report tools do not guarantee these report definitions or their required fields.",
+    "Add collection age and price-value reporting by call number (R206, R207), or document that the report writer supports the required fields and calculations. Current collection-value reporting does not specify the call-number breakdown or collection-age report.",
+    "Clarify R112: the referenced attached fine-grained-report specification is not provided or traceably represented in the requirements. Supply and map that specification, or establish that R112 is not an in-scope requirement.",
+    "Remove or consolidate duplicated requirements: `report-output-formats-and-delivery` and `export-and-excel-quality` repeat Excel-compatible and pivot-table output (and export quality); `vendor-integration-apis` repeats the API/file-transfer integration scope in `enterprise-integration-and-opac-interaction`; and `report-selection-criteria-display` repeats criteria display already required by `report-writer-features`. Preserve any unique details when consolidating.",
+    "Consolidate repeated batch-operation safety requirements across `item-transfer-batch-utility`, `purging-and-weeding-utility`, and `efficient-batch-update-safety` (including previews, permissions, performance, and revert/confirmation behavior), or make the cross-cutting requirement clearly non-redundant.",
+    "Consolidate the repeated snapshot requirements for bills and transaction data across `transactions-history-and-aggregation`, `real-time-and-historical-reporting`, and `snapshot-bills-and-last-circulation` (R374, R379, R380), retaining the distinct last-circulation and renewal rules."
+  ]
+}

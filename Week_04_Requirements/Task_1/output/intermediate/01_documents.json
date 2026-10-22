@@ -1,0 +1,102 @@
+[
+  {
+    "doc_id": "D01",
+    "path": "conversations/conv_pines014_material_volume.eml",
+    "chars": 4308
+  },
+  {
+    "doc_id": "D02",
+    "path": "conversations/conv_pines015_capacity_interface.eml",
+    "chars": 3969
+  },
+  {
+    "doc_id": "D03",
+    "path": "conversations/conv_pines016_shelf_space.eml",
+    "chars": 5078
+  },
+  {
+    "doc_id": "D04",
+    "path": "conversations/conv_pines018_item_transfer.eml",
+    "chars": 7482
+  },
+  {
+    "doc_id": "D05",
+    "path": "conversations/conv_pines019_020_missing_intransit.eml",
+    "chars": 5026
+  },
+  {
+    "doc_id": "D06",
+    "path": "conversations/conv_pines021_item_purging.eml",
+    "chars": 6137
+  },
+  {
+    "doc_id": "D07",
+    "path": "conversations/conv_pines022_deletions.eml",
+    "chars": 4757
+  },
+  {
+    "doc_id": "D08",
+    "path": "conversations/conv_pines023_patron_characteristics.eml",
+    "chars": 5083
+  },
+  {
+    "doc_id": "D09",
+    "path": "conversations/conv_pines024_inactive_patrons.eml",
+    "chars": 5694
+  },
+  {
+    "doc_id": "D10",
+    "path": "early_draft_srs_galecia.txt",
+    "chars": 29557
+  },
+  {
+    "doc_id": "D11",
+    "path": "email_financial_reports.eml",
+    "chars": 5917
+  },
+  {
+    "doc_id": "D12",
+    "path": "email_report_features.eml",
+    "chars": 5221
+  },
+  {
+    "doc_id": "D13",
+    "path": "email_staff_login.eml",
+    "chars": 4283
+  },
+  {
+    "doc_id": "D14",
+    "path": "evergreen_reference_2009.txt",
+    "chars": 9265
+  },
+  {
+    "doc_id": "D15",
+    "path": "interview_cataloging_2009-05-08.txt",
+    "chars": 5900
+  },
+  {
+    "doc_id": "D16",
+    "path": "interview_sysadmin_2009-05-10.txt",
+    "chars": 5752
+  },
+  {
+    "doc_id": "D17",
+    "path": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+    "chars": 7219
+  },
+  {
+    "doc_id": "D18",
+    "path": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+    "chars": 10567
+  },
+  {
+    "doc_id": "D19",
+    "path": "meeting_tech_subcommittee_2009-06-30.txt",
+    "chars": 8185
+  },
+  {
+    "doc_id": "D20",
+    "path": "survey_results_2009.txt",
+    "chars": 6135
+  }
+]

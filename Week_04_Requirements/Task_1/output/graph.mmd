@@ -1,0 +1,29 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	load_corpus(load_corpus)
+	extract_requirements(extract_requirements)
+	consolidate(consolidate)
+	trace_and_coverage(trace_and_coverage)
+	detect_conflicts(detect_conflicts)
+	prioritize(prioritize)
+	review(review)
+	format_document(format_document)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> load_corpus;
+	consolidate --> trace_and_coverage;
+	detect_conflicts --> prioritize;
+	extract_requirements --> consolidate;
+	load_corpus --> extract_requirements;
+	prioritize --> review;
+	review -.-> consolidate;
+	review -.-> format_document;
+	trace_and_coverage --> detect_conflicts;
+	format_document --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
