@@ -1,0 +1,3 @@
+Embedding vstupu: úloha sa embeduje tým istým modelom ako chunky (all-MiniLM-L6-v2).
+Porovnanie: emedovaný vstup sa porovná so všetkými chunkami pomocou kosínusovej podobnosti, ktorá meria význam textu nezávisle od jeho dĺžky. Vektory sú normalizované, takže stačí skalárny súčin. 
+Výber: chunky sa zoradia podľa skóre a vráti sa top 5 najpodobnejších chunkov, aby sa relevantný kód nestratil, a zároveň kontext nebol zahltený.

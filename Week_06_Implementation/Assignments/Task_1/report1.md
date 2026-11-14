@@ -1,0 +1,1 @@
+Agent naklonoval pomocou nástroja na spúšťanie príkazov v termináli. Agent navrhol príkaz git clone https://github.com/Neltharion59/AI4SE_Playground, VS Code ho po mojom schválení spustil v integrovanom termináli a lokálne nainštalovaný Git stiahol repozitár z GitHubu. Potom agent rovnakým spôsobom zmazal priečinok .git v naklonovanom repozitári.

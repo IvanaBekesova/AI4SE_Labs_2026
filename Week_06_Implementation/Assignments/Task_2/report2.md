@@ -1,0 +1,3 @@
+Delenie: súbory sa delia podľa syntaktickej štruktúry. Základné jednotky sú funkcie, metódy, hlavičky tried a kód na úrovni modulu, aby logické celky ostali spolu a žiadna funkcia sa nerozdelila v polovici.
+Veľkosť chunku: maximálne 60 riadkov. Jednotky tej istej triedy sa zlučujú, kým chunk nedosiahne 60 riadkov. Jednotka dlhšia ako 60 riadkov sa rozdelí na okná s prekryvom 10 riadkov, aby sa nestratila súvislosť.
+Dátová štruktúra: chunky sú uložené v JSON ako zoznam objektov s poľami id, file, class, symbols,start_line, end_line a content. Tým sa umožní neskôr vyhľadávať chunky podľa súboru alebo názvu triedy či funkcie.
