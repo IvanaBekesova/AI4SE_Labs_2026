@@ -1,0 +1,1 @@
+Najprv som skúsila príkaz /init. Copilot ním však nevytvoril AGENTS.md ale súbor .github/copilot-instructions.md, ktorý slúži na to isté. AGENTS.md som preto vytvorila tak, že som Copilotovi v ďalšej správe napísala, nech tie isté informácie o projekte zapíše do súboru AGENTS.md.

@@ -1,0 +1,1 @@
+V github copilote sa neda priamo upraviť systemový prompt. Dá sa ale vytvoriť súbor .github/copilot-instructions.m, a ten keď sa doňho napíše nejaká inštrukcia, tak sa automaticky pridá do systémového promptu. 

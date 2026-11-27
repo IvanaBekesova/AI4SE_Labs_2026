@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "pocasie": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["${workspaceFolder}/mcp-server/server.py"]
+    }
+  }
+}
